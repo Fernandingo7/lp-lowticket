@@ -90,7 +90,7 @@ function CountdownTimer() {
 function BuyButton() {
   return (
     <a href="#oferta" className="buy-btn">
-      <span>QUERO COMPRAR AGORA COM DESCONTO!</span>
+      <span>QUERO COMPRAR AGORA <br />COM DESCONTO!</span>
       <span className="buy-btn-arrow">↗</span>
     </a>
   )
@@ -128,6 +128,7 @@ export default function App() {
           <BuyButton />
           <PaymentBadge />
         </div>
+        <img src="/hero.webp" alt="" className="hero-overlay-image" aria-hidden="true" />
       </section>
 
       {/* PAINS */}
@@ -189,7 +190,7 @@ export default function App() {
           <BuyButton />
           <PaymentBadge />
         </div>
-      </section>
+              </section>
 
       {/* STEPS */}
       <section className="steps-section">
