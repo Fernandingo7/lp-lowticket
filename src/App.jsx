@@ -5,8 +5,6 @@ const BASE_URL = 'https://site.incorporacaoimobiliaria.eng.br/wp-content/uploads
 const LOGO_URL = 'https://site.incorporacaoimobiliaria.eng.br/wp-content/uploads/2026/01/logo-arsenal-de-documentos-e-contratos-1.webp'
 const HERO_BG = '/bg-desktop.png'
 const PAYMENT_ICONS = `${BASE_URL}/Vector.svg`
-const STEP_BAR = `${BASE_URL}/Rectangle-41.svg`
-const PROFESSOR_IMG = `/felipe-foto.webp`
 const SHIELD_LOGO = `${BASE_URL}/Vector-3.svg`
 
 const docs = [
@@ -205,7 +203,7 @@ export default function App() {
               <div key={i} className="step-card">
                 <div className="step-header">{step.num}. {step.title}</div>
                 <p className="step-desc">{step.desc}</p>
-                <img src={STEP_BAR} alt="" className="step-bar" onError={e => e.target.style.display = 'none'} />
+                <span className="step-bar" aria-hidden="true" />
               </div>
             ))}
           </div>
@@ -220,16 +218,11 @@ export default function App() {
       <section className="professor-section">
         <div className="professor-inner">
           <div className="professor-text">
-            <p className="professor-label">QUEM SERÁ SEU PROFESSOR?</p>
-            <h2 className="professor-name">Prof. Felipe Scherer</h2>
-            <p>Felipe Scherer é advogado especialista em Direito do Trabalho, pós-graduado em Direito e Processo do Trabalho e sócio-proprietário do escritório FOLS Advocacia.</p>
-            <p>Com mais de 13 anos de experiência, atuou em mais de 3.000 processos e obteve, com o seu escritório, mais de R$10 milhões de faturamento.</p>
-            <p>Autor do curso "Prática em Acidente de Trabalho 2.0", hoje Felipe também ajuda advogados que desejam ter o conhecimento e a segurança necessários para aumentar as suas probabilidades de êxito e, consequentemente, seus honorários nas ações de Acidente de Trabalho e Doença Ocupacional.</p>
+            <p className="professor-label">Conheça o seu mentor</p>
+            <p><strong>Felipe Scherer</strong> é advogado especialista em Direito do Trabalho, pós-graduado em Direito e Processo do Trabalho e sócio-proprietário do escritório FOLS Advocacia.</p>
+            <p>Com mais de 10 anos de experiência, atuou em mais de 2.700 processos e obteve, com o seu escritório, <strong>mais de R$8 milhões de faturamento.</strong></p>
+            <p>Autor do curso "Prática em Acidente de Trabalho 2.0", hoje Felipe também ajuda advogados que desejam ter o conhecimento e a segurança necessários para <strong>aumentar as suas probabilidades de êxito - e, consequentemente, seus honorários - nas ações de Acidente de Trabalho e Doença Ocupacional.</strong></p>
             <BuyButton />
-            <PaymentBadge />
-          </div>
-          <div className="professor-img-wrap">
-            <img src={PROFESSOR_IMG} alt="Prof. Jamil Rahme" className="professor-img" />
           </div>
         </div>
       </section>
