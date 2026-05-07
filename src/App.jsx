@@ -190,7 +190,7 @@ export default function App() {
           <BuyButton />
           <PaymentBadge />
         </div>
-              </section>
+      </section>
 
       {/* STEPS */}
       <section className="steps-section">

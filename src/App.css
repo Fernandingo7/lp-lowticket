@@ -103,7 +103,7 @@ body {
   position: absolute;
   inset: 0;
   /* Gradiente da esquerda para a direita */
-  background: linear-gradient(90deg,
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(90deg,
       rgba(0, 0, 0, 0.92) 0%,
       rgba(0, 0, 0, 0.78) 20%,
       rgba(0, 0, 0, 0.45) 40%,
@@ -761,15 +761,52 @@ body {
   }
 
   .hero-section {
-    padding: 8vw 5vw 80vw;
-    background-position: bottom center;
-    background-size: contain;
+    flex-direction: column;
+    align-items: center;
+    padding: 8vw 5vw 0;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 680px;
+    z-index: 2;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-headline {
+    max-width: 100%;
+  }
+
+  .hero-sub {
+    max-width: 100%;
+  }
+
+  .price-row {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-content .buy-btn {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .hero-content .payment-badge {
+    justify-content: center;
   }
 
   .hero-overlay-image {
-    right: -8vw;
-    top: 30%;
-    width: min(78vw, 620px);
+    position: relative;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    width: min(92vw, 620px);
+    max-height: none;
+    margin: 31px auto 0;
+    transform: none;
   }
 
   .hero-logo {
@@ -782,6 +819,25 @@ body {
 
   .docs-grid {
     grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 18px;
+  }
+
+  .doc-card {
+    width: 100%;
+    max-width: 680px;
+  }
+
+  .doc-card:last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+
+  .doc-img-wrap {
+    width: clamp(150px, 28vw, 220px);
+  }
+
+  .doc-info {
+    min-width: 0;
   }
 
   .steps-grid {
@@ -843,25 +899,45 @@ body {
   }
 
   .hero-section {
-    min-height: 100svh;
-    padding: 8vw 5vw clamp(360px, 72vw, 430px);
+    min-height: auto;
+    padding: 8vw 5vw 0;
     overflow: hidden;
   }
 
   .hero-content {
     max-width: 100%;
     z-index: 2;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-headline {
+    max-width: 100%;
+  }
+
+  .hero-sub {
+    max-width: 100%;
+  }
+
+  .hero-content .buy-btn {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .hero-content .payment-badge {
+    justify-content: center;
   }
 
   .hero-overlay-image {
     display: block;
-    left: 50%;
+    left: auto;
     right: auto;
     top: auto;
-    bottom: 24px;
-    width: clamp(350px, 105vw, 500px);
-    max-height: clamp(330px, 64vw, 430px);
-    transform: translateX(-50%);
+    bottom: auto;
+    width: min(108vw, 500px);
+    max-height: none;
+    margin: 26px auto 0;
+    transform: none;
   }
 
   .top-timer-bar {
@@ -904,8 +980,14 @@ body {
   }
 
   .docs-grid {
-    gap: 12px;
+    grid-template-columns: 1fr;
+    gap: 14px;
     margin-top: 16px;
+    justify-items: stretch;
+  }
+
+  .doc-card:last-child:nth-child(odd) {
+    grid-column: auto;
   }
 
   .doc-card {
@@ -916,7 +998,8 @@ body {
     padding: 10px;
     align-items: center;
     gap: 10px;
-    max-width: 360px;
+    width: 100%;
+    max-width: 420px;
     margin: 0 auto;
   }
 
@@ -958,7 +1041,8 @@ body {
 
   .price-row {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    width: 100%;
   }
 
   .professor-inner {
