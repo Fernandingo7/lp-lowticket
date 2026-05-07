@@ -3,7 +3,7 @@ import './App.css'
 
 const BASE_URL = 'https://site.incorporacaoimobiliaria.eng.br/wp-content/uploads/2026/04'
 const LOGO_URL = 'https://site.incorporacaoimobiliaria.eng.br/wp-content/uploads/2026/01/logo-arsenal-de-documentos-e-contratos-1.webp'
-const HERO_BG = '/hero-lawyer.png'
+const HERO_BG = '/bg-desktop.png'
 const PAYMENT_ICONS = `${BASE_URL}/Vector.svg`
 const STEP_BAR = `${BASE_URL}/Rectangle-41.svg`
 const PROFESSOR_IMG = `/felipe-foto.webp`

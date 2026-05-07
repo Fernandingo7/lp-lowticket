@@ -482,7 +482,7 @@ body {
   flex-direction: column;
   gap: 12px;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 .offer-features li {
@@ -719,7 +719,7 @@ body {
 
 @media (max-width: 600px) {
   .hero-section {
-    background-image: url('/hero-mobile.png') !important;
+    background-image: url('/bg-mobile.png') !important;
     background-size: cover;
     background-position: center top;
   }
