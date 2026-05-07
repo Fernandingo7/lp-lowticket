@@ -99,7 +99,7 @@ function BuyButton() {
 function PaymentBadge() {
   return (
     <div className="payment-badge">
-      <img src={PAYMENT_ICONS} alt="Formas de pagamento" className="payment-icons" onError={e => e.target.style.display='none'} />
+      <img src={PAYMENT_ICONS} alt="Formas de pagamento" className="payment-icons" onError={e => e.target.style.display = 'none'} />
     </div>
   )
 }
@@ -115,11 +115,10 @@ export default function App() {
       {/* HERO */}
       <section className="hero-section" style={{ backgroundImage: `url(${HERO_BG})` }}>
         <div className="hero-content">
-          <img src={LOGO_URL} alt="Arsenal de Documentos e Contratos" className="hero-logo" onError={e => e.target.style.display='none'} />
-          <img src="/logo_3.svg" alt="Logo" className="hero-secondary-logo" onError={e => e.target.style.display='none'} />
+          <img src={LOGO_URL} alt="Arsenal de Documentos e Contratos" className="hero-logo" onError={e => e.target.style.display = 'none'} />
+          <img src="/logo_3.svg" alt="Logo" className="hero-secondary-logo" onError={e => e.target.style.display = 'none'} />
           <h1 className="hero-headline">
-            O material técnico-prático para advogados que desejam estruturar ações de hérnia de disco com muito mais segurança, técnica e assertividade.{' '}
-            <span className="hero-highlight"></span>
+            Um material <span className="hero-highlight">imediatamente aplicável</span> para advogados que desejam <span className="hero-highlight">estruturar ações de hérnia de disco com mais segurança e assertividade.</span>
           </h1>
           <p className="hero-sub">Tenha acesso imediato a fundamentos técnicos, quesitos, roteiro de perguntas, checklist estratégico e referências científicas aplicáveis na prática.</p>
           <div className="price-row">
@@ -160,7 +159,7 @@ export default function App() {
                   <img src={doc.img} alt={`Documento ${i + 1}`} className="doc-img" />
                 </div>
                 <div className="doc-info">
-                  <img src={LOGO_URL} alt="logo" className="doc-logo-img" onError={e => e.target.style.display='none'} />
+                  <img src={LOGO_URL} alt="logo" className="doc-logo-img" onError={e => e.target.style.display = 'none'} />
                   <p className="doc-desc"><strong>{doc.title}</strong></p>
                   <p className="doc-desc">{doc.desc}</p>
                 </div>
@@ -175,7 +174,7 @@ export default function App() {
         <div className="offer-sides left" />
         <div className="offer-sides right" />
         <div className="offer-box">
-          <img src={LOGO_URL} alt="Arsenal logo" className="offer-logo" onError={e => e.target.style.display='none'} />
+          <img src={LOGO_URL} alt="Arsenal logo" className="offer-logo" onError={e => e.target.style.display = 'none'} />
           <h3 className="offer-title">Adquira agora o<br />Manual de Defesa!</h3>
           <hr className="offer-divider" />
           <ul className="offer-features">
@@ -205,7 +204,7 @@ export default function App() {
               <div key={i} className="step-card">
                 <div className="step-header">{step.num}. {step.title}</div>
                 <p className="step-desc">{step.desc}</p>
-                <img src={STEP_BAR} alt="" className="step-bar" onError={e => e.target.style.display='none'} />
+                <img src={STEP_BAR} alt="" className="step-bar" onError={e => e.target.style.display = 'none'} />
               </div>
             ))}
           </div>
@@ -221,7 +220,7 @@ export default function App() {
         <div className="professor-inner">
           <div className="professor-text">
             <p className="professor-label">QUEM SERÁ SEU PROFESSOR?</p>
-                 <h2 className="professor-name">Prof. Felipe Scherer</h2>
+            <h2 className="professor-name">Prof. Felipe Scherer</h2>
             <p>Felipe Scherer é advogado especialista em Direito do Trabalho, pós-graduado em Direito e Processo do Trabalho e sócio-proprietário do escritório FOLS Advocacia.</p>
             <p>Com mais de 13 anos de experiência, atuou em mais de 3.000 processos e obteve, com o seu escritório, mais de R$10 milhões de faturamento.</p>
             <p>Autor do curso "Prática em Acidente de Trabalho 2.0", hoje Felipe também ajuda advogados que desejam ter o conhecimento e a segurança necessários para aumentar as suas probabilidades de êxito e, consequentemente, seus honorários nas ações de Acidente de Trabalho e Doença Ocupacional.</p>
