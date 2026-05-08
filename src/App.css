@@ -820,13 +820,14 @@ body {
 
   .hero-overlay-image {
     position: relative;
+    left: 50%;
     right: auto;
     top: auto;
     bottom: auto;
     width: min(92vw, 620px);
     max-height: none;
-    margin: 31px auto 0;
-    transform: none;
+    margin: 31px 0 0;
+    transform: translateX(-50%);
   }
 
   .hero-logo {
@@ -980,14 +981,15 @@ body {
 
   .hero-overlay-image {
     display: block;
-    left: auto;
+    position: relative;
+    left: 50%;
     right: auto;
     top: auto;
     bottom: auto;
-    width: min(108vw, 500px);
+    width: min(100vw, 500px);
     max-height: none;
-    margin: 26px auto 0;
-    transform: none;
+    margin: 26px 0 0;
+    transform: translateX(-50%);
   }
 
   .top-timer-bar {
