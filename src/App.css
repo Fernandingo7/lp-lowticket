@@ -1082,8 +1082,8 @@ body {
         rgba(0, 0, 0, 0.86) 48%,
         rgba(0, 0, 0, 0.98) 100%),
       url('/bio.webp');
-    background-size: 100%;
-    background-position: center top;
+    background-size: 200%;
+    background-position: calc(50% - 150px) top;
     background-repeat: no-repeat;
     background-color: #030303;
     min-height: auto;
