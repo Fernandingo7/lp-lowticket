@@ -168,6 +168,21 @@ export default function App() {
         </div>
       </section>
 
+      {/* BONUS */}
+      <section className="bonus-section">
+        <div className="container">
+          <p className="bonus-kicker">🎁 E VOCÊ AINDA RECEBERÁ COMO BÔNUS ACESSO AO</p>
+          <div className="bonus-card">
+            <img src="/iPhone 16.webp" alt="Núcleo da Advocacia Acidentária" className="bonus-mockup-img" />
+            <h2 className="bonus-title">NÚCLEO DA ADVOCACIA ACIDENTÁRIA</h2>
+            <div className="bonus-divider" />
+            <p className="bonus-desc">
+              Um grupo exclusivo e reservado aos alunos, no qual serão disponibilizados materiais <strong>estratégicos, áudios, PDFs e conteúdos aprofundados</strong> sobre a <span>defesa de reclamantes em ações de Acidente de Trabalho e Doença Ocupacional.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* OFFER BOX */}
       <section className="offer-section" id="oferta">
         <div className="offer-sides left" />
