@@ -121,7 +121,7 @@ export default function App() {
           </h1>
           <p className="hero-sub">Tenha acesso imediato a fundamentos técnicos, quesitos, roteiro de perguntas, checklist estratégico e referências científicas aplicáveis na prática.</p>
           <div className="price-row">
-            <div className="price-from">DE: <span className="price-striked">R$ 197,00</span></div>
+            <div className="price-from">DE: <span className="price-striked">R$ 199,00</span></div>
             <div className="price-main">POR: <span className="price-green">R$ 19,90</span></div>
           </div>
           <BuyButton />
@@ -230,12 +230,12 @@ export default function App() {
       {/* STEPS */}
       <section className="steps-section">
         <div className="container">
-          <h2 className="section-title light">VOCÊ VAI RECEBER O ARSENAL<br />DIRETO NO SEU E-MAIL:</h2>
+          <h2 className="section-title light">VOCÊ VAI RECEBER O MANUAL<br />DIRETO NO SEU E-MAIL:</h2>
           <div className="steps-grid">
             {[
-              { num: '1', title: 'ADQUIRA O ARSENAL', desc: 'Na próxima tela, você vai preencher seus dados e confirmar.' },
-              { num: '2', title: 'RECEBA O ARSENAL', desc: 'Na próxima tela, você vai preencher seus dados e confirmar.' },
-              { num: '3', title: 'PRATIQUE O ARSENAL', desc: 'Tudo pronto! Agora é só acessar, editar e usar os documentos, garantindo segurança para você!' },
+              { num: '1', title: 'ADQUIRA O MANUAL', desc: 'Na próxima tela, você vai preencher seus dados e confirmar.' },
+              { num: '2', title: 'RECEBA O MANUAL', desc: 'Na próxima tela, você vai preencher seus dados e confirmar.' },
+              { num: '3', title: 'PRATIQUE O MANUAL', desc: 'Tudo pronto! Agora é só acessar, editar e usar os documentos, garantindo segurança para você!' },
             ].map((step, i) => (
               <div key={i} className="step-card">
                 <div className="step-header">{step.num}. {step.title}</div>

@@ -120,6 +120,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: flex-start;
+}
+
+.hero-content .payment-badge {
+  justify-content: flex-start;
+  margin-inline: 0;
 }
 
 .hero-overlay-image {
@@ -300,8 +306,10 @@ body {
 }
 
 .secure-badge {
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
   white-space: nowrap;
 }
 
@@ -902,13 +910,14 @@ body {
     width: 100%;
   }
 
+  .hero-content .payment-badge {
+    justify-content: center;
+    margin-inline: auto;
+  }
+
   .hero-content .buy-btn {
     width: 100%;
     max-width: 420px;
-  }
-
-  .hero-content .payment-badge {
-    justify-content: center;
   }
 
   .hero-overlay-image {
@@ -1070,6 +1079,7 @@ body {
 
   .hero-content .payment-badge {
     justify-content: center;
+    margin-inline: auto;
   }
 
   .hero-overlay-image {
@@ -1321,7 +1331,6 @@ body {
   }
 
   .offer-price {
-    margin-top: -50px;
     font-size: 56px;
   }
 
