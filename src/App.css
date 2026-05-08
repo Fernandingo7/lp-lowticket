@@ -283,18 +283,26 @@ body {
 .payment-badge {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 420px;
+  margin-inline: auto;
+  overflow: hidden;
 }
 
 .payment-icons {
   height: 20px;
   width: auto;
+  max-width: min(260px, 100%);
+  object-fit: contain;
 }
 
 .secure-badge {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
 }
 
 /* ─── PAINS SECTION ─── */
@@ -918,6 +926,20 @@ body {
 }
 
 @media (max-width: 600px) {
+  .payment-badge {
+    gap: 8px;
+    max-width: 100%;
+  }
+
+  .payment-icons {
+    height: 16px;
+    max-width: min(210px, 100%);
+  }
+
+  .secure-badge {
+    font-size: 11px;
+  }
+
   .hero-section {
     background-image: url('/bg-mobile.png') !important;
     background-size: cover;
