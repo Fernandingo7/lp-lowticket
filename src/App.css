@@ -827,7 +827,7 @@ body {
     width: min(92vw, 620px);
     max-height: none;
     margin: 31px 0 0;
-    transform: translateX(-50%);
+    transform: translateX(-47%);
   }
 
   .hero-logo {
@@ -989,7 +989,7 @@ body {
     width: min(100vw, 500px);
     max-height: none;
     margin: 26px 0 0;
-    transform: translateX(-50%);
+    transform: translateX(-46%);
   }
 
   .top-timer-bar {
