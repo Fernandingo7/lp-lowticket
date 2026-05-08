@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import { FileText, Mic, BookOpen, Layers } from 'lucide-react'
+import { FileText, Mic, BookOpen, Layers, ArrowUpRight } from 'lucide-react'
 
 const BASE_URL = 'https://site.incorporacaoimobiliaria.eng.br/wp-content/uploads/2026/04'
 const LOGO_URL = 'https://site.incorporacaoimobiliaria.eng.br/wp-content/uploads/2026/01/logo-arsenal-de-documentos-e-contratos-1.webp'
@@ -90,7 +90,7 @@ function BuyButton() {
   return (
     <a href="#oferta" className="buy-btn">
       <span>QUERO COMPRAR AGORA <br />COM DESCONTO!</span>
-      <span className="buy-btn-arrow">↗</span>
+      <ArrowUpRight className="buy-btn-arrow-icon" />
     </a>
   )
 }

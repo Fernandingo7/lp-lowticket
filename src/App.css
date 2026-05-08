@@ -264,25 +264,56 @@ body {
   padding: 16px 28px;
   max-width: 360px;
   text-align: center;
-  transition: filter 0.2s, transform 0.15s;
+  transition: filter 0.2s, transform 0.15s, box-shadow 0.3s;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  animation: btn-pulse 2s ease-in-out infinite;
+}
+
+.buy-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  animation: shimmer 5s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
+@keyframes btn-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.4); }
+  50% { box-shadow: 0 0 20px 5px rgba(74, 222, 128, 0.2); }
 }
 
 .buy-btn:hover {
-  filter: brightness(1.1);
-  transform: translateY(-1px);
+  filter: brightness(1.15);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(74, 222, 128, 0.35);
 }
 
-.buy-btn-arrow {
-  background: rgba(0, 0, 0, 0.25);
+.buy-btn:hover::before {
+  animation: shimmer 3s infinite;
+}
+
+.buy-btn-arrow-icon {
+  background: rgba(0, 0, 0, 0.15);
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
   flex-shrink: 0;
+  color: #000000;
+  stroke-width: 2.5;
+  margin-left: 8px;
 }
 
 /* ─── PAYMENT BADGE ─── */
@@ -1274,9 +1305,10 @@ body {
   .professor-section {
     background-image: linear-gradient(180deg,
         rgba(0, 0, 0, 0.05) 0%,
-        rgba(0, 0, 0, 0.12) 30%,
-        rgba(0, 0, 0, 0.86) 48%,
-        rgba(0, 0, 0, 0.98) 100%),
+        rgba(0, 0, 0, 0.12) 20%,
+        rgba(0, 0, 0, 0.70) 35%,
+        rgba(0, 0, 0, 0.95) 50%,
+        rgba(0, 0, 0, 1.0) 100%),
       url('/bio.webp');
     background-size: 200%;
     background-position: calc(50% - 150px) top;
