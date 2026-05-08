@@ -114,7 +114,7 @@ export default function App() {
       {/* HERO */}
       <section className="hero-section" style={{ backgroundImage: `url(${HERO_BG})` }}>
         <div className="hero-content">
-          <img src={LOGO_URL} alt="Arsenal de Documentos e Contratos" className="hero-logo" onError={e => e.target.style.display = 'none'} />
+          <img src={LOGO_URL} alt="" className="hero-logo" onError={e => e.target.style.display = 'none'} />
           <img src="/logo_3.svg" alt="Logo" className="hero-secondary-logo" onError={e => e.target.style.display = 'none'} />
           <h1 className="hero-headline">
             Um material <span className="hero-highlight">imediatamente aplicável</span> para advogados que desejam <span className="hero-highlight">estruturar ações de hérnia de disco com mais segurança e assertividade.</span>
