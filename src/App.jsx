@@ -10,29 +10,46 @@ const SHIELD_LOGO = `${BASE_URL}/Vector-3.svg`
 
 const docs = [
   {
+    img: '/doc-checklist.png',
+    coverTitle: 'CHECKLIST DE TRIAGEM DE CASOS',
+    headline: 'Decida em minutos se vale a pena ajuizar a ação.',
+    desc: 'Checklist pronta para identificar casos com alto potencial, evitar ações com baixa viabilidade e reduzir o risco de improcedência antes mesmo da distribuição.',
+  },
+  {
     img: '/doc-relatorio.png',
-    title: 'RELATÓRIO TÉCNICO-CIENTÍFICO SOBRE NEXO CAUSAL',
-    desc: 'Fundamentação técnico-científica para demonstrar a relação entre atividade laboral e hérnia de disco.',
+    coverTitle: 'MODELO DE PETIÇÃO INICIAL COM 4 BLOCOS PRONTOS PARA COPIAR E COLAR',
+    headline: 'Pare de escrever petições de Burnout do zero.',
+    desc: 'Tenha acesso à estrutura completa de petição inicial que utilizo no meu escritório, acompanhada dos principais blocos argumentativos para copiar, adaptar e utilizar imediatamente nos seus processos.',
   },
   {
     img: '/doc-roteiro.png',
-    title: 'ROTEIRO DE PERGUNTAS',
-    desc: 'Perguntas estratégicas para reclamante, preposto e testemunha, com foco em reconhecimento probatório.',
-  },
-  {
-    img: '/doc-checklist.png',
-    title: 'CHECKLIST PARA INSTRUÇÃO DA INICIAL',
-    desc: 'Tudo o que deve ser levantado antes do ajuizamento da ação.',
+    coverTitle: 'ROTEIRO DE AUDIÊNCIA',
+    headline: 'Perguntas prontas para extrair prova.',
+    desc: 'Perguntas para reclamante, preposto e testemunhas com foco em demonstrar pressão excessiva, metas abusivas, assédio e adoecimento ocupacional.',
   },
   {
     img: '/doc-quesitos.png',
-    title: 'MODELOS DE QUESITOS PERICIAIS',
-    desc: 'Quesitos técnicos voltados especificamente para casos de hérnia de disco.',
+    coverTitle: 'MODELOS DE QUESITOS PERICIAIS',
+    headline: 'Pare de inventar perguntas para o perito.',
+    desc: 'Quesitos prontos de nexo causal, dano e incapacidade para copiar, adaptar e utilizar imediatamente nas suas ações de Burnout e Doença Ocupacional.',
   },
   {
-    img: `/doc-biblio.png`,
-    title: 'REFERÊNCIAS BIBLIOGRÁFICAS',
-    desc: 'Base científica para fortalecer petição inicial, impugnação de laudo e manifestações técnicas.',
+    img: '/doc-biblio.png',
+    coverTitle: 'AS 9 PRINCIPAIS TESES DEFENSIVAS DESMONTADAS',
+    headline: 'Saiba exatamente como enfrentar os argumentos mais comuns da defesa e dos peritos.',
+    desc: 'Refutações prontas para alegações como multifatorialidade, fatores pessoais, ausência de CAT, doenças pré-existentes, comorbidades e outras teses frequentemente utilizadas para afastar o nexo causal.',
+  },
+  {
+    img: '/doc-relatorio.png',
+    coverTitle: 'RECURSO ORDINÁRIO SIMPLIFICADO',
+    headline: 'Saiba exatamente o que fazer após uma improcedência.',
+    desc: 'Passo a passo para estruturar o recurso e enfrentar os fundamentos mais comuns utilizados para negar o nexo causal.',
+  },
+  {
+    img: '/doc-checklist.png',
+    coverTitle: 'ANÁLISE DE 10 CASOS REAIS DE PROCEDÊNCIA',
+    headline: 'Veja o que funcionou na prática.',
+    desc: 'A minha análise sobre 10 decisões favoráveis ao reclamante com destaque para as provas, estratégias e argumentos que levaram ao reconhecimento do Burnout como doença ocupacional.',
   },
 ]
 
@@ -182,16 +199,18 @@ export default function App() {
       {/* DOCS GRID */}
       <section className="docs-section">
         <div className="container">
-          <h2 className="section-title light">VEJA TUDO O QUE VOCÊ TERÁ ACESSO NO MANUAL:</h2>
+          <h2 className="section-title light">VEJA TUDO O QUE VOCÊ TERÁ ACESSO NO KIT COMPLETO:</h2>
           <div className="docs-grid">
             {docs.map((doc, i) => (
               <div key={i} className="doc-card">
                 <div className="doc-img-wrap">
                   <img src={doc.img} alt={`Documento ${i + 1}`} className="doc-img" />
+                  <div className="doc-img-overlay">
+                    <span className="doc-cover-title">{doc.coverTitle}</span>
+                  </div>
                 </div>
                 <div className="doc-info">
-                  <img src={LOGO_URL} alt="logo" className="doc-logo-img" onError={e => e.target.style.display = 'none'} />
-                  <p className="doc-desc"><strong>{doc.title}</strong></p>
+                  <p className="doc-headline">{doc.headline}</p>
                   <p className="doc-desc">{doc.desc}</p>
                 </div>
               </div>
