@@ -257,7 +257,7 @@ export default function App() {
         <div className="offer-sides right" />
         <div className="offer-box">
           <img src={LOGO_URL} alt="Arsenal logo" className="offer-logo" onError={e => e.target.style.display = 'none'} />
-          <h3 className="offer-title">Adquira agora o<br />Manual de Defesa!</h3>
+          <h3 className="offer-title">Adquira agora o<br />Playbook do Reclamante!</h3>
           <hr className="offer-divider" />
           <ul className="offer-features">
             <li><span className="check-circle">✓</span> Acesso vitalício</li>
@@ -276,12 +276,12 @@ export default function App() {
       {/* STEPS */}
       <section className="steps-section">
         <div className="container">
-          <h2 className="section-title light">VOCÊ VAI RECEBER O MANUAL<br />DIRETO NO SEU E-MAIL:</h2>
+          <h2 className="section-title light">VOCÊ VAI RECEBER O PLAYBOOK<br />DIRETO NO SEU E-MAIL:</h2>
           <div className="steps-grid">
             {[
-              { num: '1', title: 'ADQUIRA O MANUAL', desc: 'Na próxima tela, você vai preencher seus dados e confirmar.' },
-              { num: '2', title: 'RECEBA O MANUAL', desc: 'Na próxima tela, você vai preencher seus dados e confirmar.' },
-              { num: '3', title: 'PRATIQUE O MANUAL', desc: 'Tudo pronto! Agora é só acessar, editar e usar os documentos, garantindo segurança para você!' },
+              { num: '1', title: 'ADQUIRA O PLAYBOOK', desc: 'Na próxima tela, você vai preencher seus dados e confirmar.' },
+              { num: '2', title: 'RECEBA O PLAYBOOK', desc: 'Na próxima tela, você vai preencher seus dados e confirmar.' },
+              { num: '3', title: 'PRATIQUE O PLAYBOOK', desc: 'Tudo pronto! Agora é só acessar, editar e usar os documentos, garantindo segurança para você!' },
             ].map((step, i) => (
               <div key={i} className="step-card">
                 <div className="step-header">{step.num}. {step.title}</div>
