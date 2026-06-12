@@ -205,9 +205,6 @@ export default function App() {
               <div key={i} className="doc-card">
                 <div className="doc-img-wrap">
                   <img src={doc.img} alt={`Documento ${i + 1}`} className="doc-img" />
-                  <div className="doc-img-overlay">
-                    <span className="doc-cover-title">{doc.coverTitle}</span>
-                  </div>
                 </div>
                 <div className="doc-info">
                   <p className="doc-headline">{doc.headline}</p>
