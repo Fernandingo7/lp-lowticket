@@ -3,7 +3,7 @@ import './App.css'
 import { FileText, Mic, BookOpen, Layers, ArrowUpRight } from 'lucide-react'
 
 const BASE_URL = 'https://site.incorporacaoimobiliaria.eng.br/wp-content/uploads/2026/04'
-const LOGO_URL = 'https://site.incorporacaoimobiliaria.eng.br/wp-content/uploads/2026/01/logo-arsenal-de-documentos-e-contratos-1.webp'
+const LOGO_URL = '/logo.svg'
 const HERO_BG = '/bg-desktop.png'
 const PAYMENT_ICONS = `${BASE_URL}/Vector.svg`
 const SHIELD_LOGO = `${BASE_URL}/Vector-3.svg`
@@ -132,7 +132,6 @@ export default function App() {
       <section className="hero-section" style={{ backgroundImage: `url(${HERO_BG})` }}>
         <div className="hero-content">
           <img src={LOGO_URL} alt="" className="hero-logo" onError={e => e.target.style.display = 'none'} />
-          <img src="/logo_3.svg" alt="Logo" className="hero-secondary-logo" onError={e => e.target.style.display = 'none'} />
           <h1 className="hero-headline">
             Um material <span className="hero-highlight">imediatamente aplicável</span> para advogados que desejam <span className="hero-highlight">estruturar ações de hérnia de disco com mais segurança e assertividade.</span>
           </h1>
