@@ -144,7 +144,7 @@ export default function App() {
           <BuyButton />
           <PaymentBadge />
         </div>
-        <img src="/hero-mockup.png" alt="" className="hero-overlay-image" aria-hidden="true" />
+        <img src="/hero.webp" alt="" className="hero-overlay-image" aria-hidden="true" />
       </section>
 
       {/* PAINS */}
