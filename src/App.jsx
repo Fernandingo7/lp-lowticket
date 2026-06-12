@@ -133,18 +133,49 @@ export default function App() {
       {/* PAINS */}
       <section className="pains-section">
         <div className="container">
-          <div className="pains-card">
-            <h2 className="section-title">A maioria das ações de hérnia de disco são mal estruturadas.</h2>
-            <p className="section-sub">E isso acontece porque muitos advogados:</p>
-            <div className="pains-list">
-              {pains.map((pain, i) => (
-                <div key={i} className="pain-item">
-                  <div className="pain-x" aria-hidden="true">✕</div>
-                  <p className="pain-text">{pain}</p>
-                </div>
-              ))}
+          <p className="pains-eyebrow">A maioria das ações de burnout são perdidas por falta de técnica.</p>
+          <div className="pains-cards-grid">
+            <div className="contrast-card contrast-card--red">
+              <div className="contrast-card__accent-line contrast-card__accent-line--red" />
+              <h3 className="contrast-card__title">Enquanto você está:</h3>
+              <ul className="contrast-card__list">
+                {[
+                  'Aceitando casos de burnout sem saber provar o nexo causal',
+                  'Usando quesitos genéricos que o perito simplesmente ignora',
+                  'Perdendo ações e honorários por falta de fundamento técnico',
+                ].map((item, i) => (
+                  <li key={i} className="contrast-card__item">
+                    <span className="contrast-card__dot contrast-card__dot--red" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="contrast-card contrast-card--green">
+              <div className="contrast-card__accent-line contrast-card__accent-line--green" />
+              <h3 className="contrast-card__title">
+                Os advogados que <span className="contrast-card__highlight">ganham</span> estão:
+              </h3>
+              <ul className="contrast-card__list">
+                {[
+                  'Provando o nexo causal com fundamentação técnico-científica irrefutável',
+                  'Formulando quesitos cirúrgicos que direcionam a conclusão pericial',
+                  'Maximizando condenações com materiais estratégicos já validados',
+                ].map((item, i) => (
+                  <li key={i} className="contrast-card__item">
+                    <span className="contrast-card__dot contrast-card__dot--green" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
+
+          <p className="pains-footer-text">
+            Cada caso perdido é um honorário que ficou na mesa.{' '}
+            <span className="pains-footer-highlight">Isso tem solução.</span>
+          </p>
         </div>
       </section>
 
