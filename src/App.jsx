@@ -133,7 +133,7 @@ export default function App() {
         <div className="hero-content">
           <img src={LOGO_URL} alt="" className="hero-logo" onError={e => e.target.style.display = 'none'} />
           <h1 className="hero-headline">
-            Um material <span className="hero-highlight">imediatamente aplicável</span> para advogados que desejam <span className="hero-highlight">estruturar ações de hérnia de disco com mais segurança e assertividade.</span>
+            Um material <span className="hero-highlight">imediatamente aplicável</span> para advogados que desejam <span className="hero-highlight">estruturar ações de síndrome de burnout com mais segurança, técnica e assertividade.</span>
           </h1>
           <p className="hero-sub">Tenha acesso imediato a fundamentos técnicos, quesitos, roteiro de perguntas, checklist estratégico e referências científicas aplicáveis na prática.</p>
           <div className="price-row">
