@@ -10,43 +10,43 @@ const SHIELD_LOGO = `${BASE_URL}/Vector-3.svg`
 
 const docs = [
   {
-    img: '/doc-triagem.png',
+    img: '/doc-triagem.webp',
     coverTitle: 'CHECKLIST DE TRIAGEM DE CASOS',
     headline: 'Decida em minutos se vale a pena ajuizar a ação.',
     desc: 'Checklist pronta para identificar casos com alto potencial, evitar ações com baixa viabilidade e reduzir o risco de improcedência antes mesmo da distribuição.',
   },
   {
-    img: '/doc-peticao.png',
+    img: '/doc-peticao.webp',
     coverTitle: 'MODELO DE PETIÇÃO INICIAL COM 4 BLOCOS PRONTOS PARA COPIAR E COLAR',
     headline: 'Pare de escrever petições de Burnout do zero.',
     desc: 'Tenha acesso à estrutura completa de petição inicial que utilizo no meu escritório, acompanhada dos principais blocos argumentativos para copiar, adaptar e utilizar imediatamente nos seus processos.',
   },
   {
-    img: '/doc-roteiro-audiencia.png',
+    img: '/doc-roteiro-audiencia.webp',
     coverTitle: 'ROTEIRO DE AUDIÊNCIA',
     headline: 'Perguntas prontas para extrair prova.',
     desc: 'Perguntas para reclamante, preposto e testemunhas com foco em demonstrar pressão excessiva, metas abusivas, assédio e adoecimento ocupacional.',
   },
   {
-    img: '/doc-quesitos-periciais.png',
+    img: '/doc-quesitos-periciais.webp',
     coverTitle: 'MODELOS DE QUESITOS PERICIAIS',
     headline: 'Pare de inventar perguntas para o perito.',
     desc: 'Quesitos prontos de nexo causal, dano e incapacidade para copiar, adaptar e utilizar imediatamente nas suas ações de Burnout e Doença Ocupacional.',
   },
   {
-    img: '/doc-teses.png',
+    img: '/doc-teses.webp',
     coverTitle: 'AS 9 PRINCIPAIS TESES DEFENSIVAS DESMONTADAS',
     headline: 'Saiba exatamente como enfrentar os argumentos mais comuns da defesa e dos peritos.',
     desc: 'Refutações prontas para alegações como multifatorialidade, fatores pessoais, ausência de CAT, doenças pré-existentes, comorbidades e outras teses frequentemente utilizadas para afastar o nexo causal.',
   },
   {
-    img: '/doc-recurso.png',
+    img: '/doc-recurso.webp',
     coverTitle: 'RECURSO ORDINÁRIO SIMPLIFICADO',
     headline: 'Saiba exatamente o que fazer após uma improcedência.',
     desc: 'Passo a passo para estruturar o recurso e enfrentar os fundamentos mais comuns utilizados para negar o nexo causal.',
   },
   {
-    img: '/doc-casos-reais.png',
+    img: '/doc-casos-reais.webp',
     coverTitle: 'ANÁLISE DE 10 CASOS REAIS DE PROCEDÊNCIA',
     headline: 'Veja o que funcionou na prática.',
     desc: 'A minha análise sobre 10 decisões favoráveis ao reclamante com destaque para as provas, estratégias e argumentos que levaram ao reconhecimento do Burnout como doença ocupacional.',
