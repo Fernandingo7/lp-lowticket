@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/obrigado", "destination": "/obrigado/index.html" },
+    { "source": "/playbook-burnout-lp2", "destination": "/playbook-burnout-lp2/index.html" },
+    { "source": "/((?!obrigado|playbook-burnout-lp2|assets).*)", "destination": "/index.html" }
+  ]
+}
