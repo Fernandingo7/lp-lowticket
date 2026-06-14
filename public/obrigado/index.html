@@ -75,25 +75,71 @@
     color: var(--copper);
   }
 
-  /* ── VIDEO ── */
-  .video-wrap {
+  /* ── PROGRESS BAR ── */
+  .progress-wrap {
     width: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-    background: #000;
-    aspect-ratio: 16 / 9;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-    border: 1px solid rgba(201,137,94,0.25);
+    max-width: 580px;
   }
 
-  .video-wrap iframe {
+  .progress-track {
+    background: #1a0a04;
+    border-radius: 999px;
+    border: 2px solid rgba(255,255,255,0.12);
+    height: 64px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.5);
+  }
+
+  .progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--red) 0%, var(--red-bright) 100%);
+    border-radius: 999px;
+    transition: width 2.4s cubic-bezier(0.22, 1, 0.36, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .progress-fill::after {
+    content: '';
     position: absolute;
     inset: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
+    background: linear-gradient(90deg, transparent 60%, rgba(255,255,255,0.12) 80%, transparent 100%);
+    animation: shimmer 2s infinite;
+  }
+
+  .progress-labels {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    pointer-events: none;
+  }
+
+  .progress-label-text {
+    font-size: clamp(15px, 3vw, 18px);
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.02em;
+  }
+
+  .progress-pct {
+    font-size: clamp(16px, 3.2vw, 19px);
+    font-weight: 800;
+    color: var(--white);
+  }
+
+  .progress-caption {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
   }
 
   /* ── BODY COPY ── */
@@ -180,20 +226,23 @@
   <main class="main">
 
     <h1 class="headline">
-      Assista o vídeo abaixo e retire<br>
-      <span class="hl">1 presente especial</span> agora!
+      Não saia! Faltam ainda<br>
+      <span class="hl">2 passos simples</span><br>
+      para confirmar seu acesso:
     </h1>
 
     <div class="divider"></div>
 
-    <!-- VIDEO — substitua o src pelo link do seu vídeo -->
-    <div class="video-wrap">
-      <iframe
-        src="https://www.youtube.com/embed/VIDEO_ID_AQUI?rel=0&modestbranding=1"
-        title="Vídeo especial"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+    <!-- PROGRESS BAR -->
+    <div class="progress-wrap">
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+        <div class="progress-labels">
+          <span class="progress-label-text">Carregando...</span>
+          <span class="progress-pct" id="progressPct">0%</span>
+        </div>
+      </div>
+      <p class="progress-caption">Preparando seu acesso ao grupo</p>
     </div>
 
     <p class="body-copy">
@@ -211,5 +260,25 @@
 
   </main>
 
+<script>
+  const fill = document.getElementById('progressFill');
+  const pct  = document.getElementById('progressPct');
+  const target = 93;
+
+  requestAnimationFrame(() => {
+    fill.style.width = target + '%';
+  });
+
+  const duration = 2400;
+  const start = performance.now();
+  function tick(now) {
+    const elapsed = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - elapsed, 3);
+    const current = Math.round(eased * target);
+    pct.textContent = current + '%';
+    if (elapsed < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+</script>
 </body>
 </html>
