@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+  ============================================================
+  LINKS FICTICIOS — SUBSTITUIR ANTES DE PUBLICAR
+  ------------------------------------------------------------
+  1. Checkout do Playbook (topbar, hero, mini-oferta, oferta final, sticky mobile):
+     https://exemplo-trocar.com/checkout-playbook-burnout
+  2. Aula avulsa Prova Testemunhal:    https://exemplo-trocar.com/aula-prova-testemunhal
+  3. Aula avulsa Depoimento das Partes: https://exemplo-trocar.com/aula-depoimento-partes
+  4. Lista de espera PAT 2.0:           https://exemplo-trocar.com/lista-espera-pat
+  5. og:url / canonical / JSON-LD url:  https://exemplo-trocar.com/
+  6. og:image:                          https://exemplo-trocar.com/capa-playbook-burnout.jpg
+  Buscar por "exemplo-trocar.com" e trocar tudo.
+  ============================================================
+-->
+
+<title>Playbook Burnout — Guia Rápido do Reclamante | Prof. Felipe Scherer</title>
+<meta name="description" content="Da triagem do caso aos quesitos que o perito não consegue ignorar. 4 blocos prontos para a inicial, baterias de perguntas, quesitos e 10 acórdãos reais de procedência. Guia prático para o advogado do reclamante.">
+<link rel="canonical" href="https://exemplo-trocar.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Playbook Burnout — Guia Rápido do Reclamante">
+<meta property="og:description" content="Pare de ver a tese de Burnout sumir no laudo pericial. Da triagem aos quesitos, pronto para aplicar no processo. 10 acórdãos reais de procedência.">
+<meta property="og:url" content="https://exemplo-trocar.com/">
+<meta property="og:image" content="https://exemplo-trocar.com/capa-playbook-burnout.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Playbook Burnout — Guia Rápido do Reclamante">
+<meta name="twitter:description" content="Da triagem aos quesitos, pronto para aplicar no processo. 10 acórdãos reais de procedência.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;0,700;0,800;0,900;1,600;1,800&display=swap">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Playbook Burnout — Guia Rápido do Reclamante (Volume 01)",
+  "description": "Guia prático para o advogado do reclamante em ações de Síndrome de Burnout: triagem, petição inicial com 4 blocos prontos, perguntas para audiência, quesitos periciais, Recurso Ordinário e 10 acórdãos reais de procedência.",
+  "brand": { "@type": "Brand", "name": "Playbook do Reclamante" },
+  "author": { "@type": "Person", "name": "Felipe Scherer" },
+  "offers": {
+    "@type": "Offer",
+    "price": "19.90",
+    "priceCurrency": "BRL",
+    "availability": "https://schema.org/InStock",
+    "url": "https://exemplo-trocar.com/"
+  }
+}
+</script>
+
+<style>
+  :root{
+    --ink:#181818;
+    --gold:#F4A100;
+    --gold-soft:#E3C25E;
+    --gold-muted:#A49166;
+    --label:#6F5E38;
+    --gray:#5C5C5C;
+    --cream:#FAF6E6;
+    --white:#FFFFFF;
+    --btn-1:#FEE5B5;
+    --btn-2:#E1B55E;
+    --on-dark:#d8d3c2;
+    --on-dark-soft:#c2bca8;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Raleway',-apple-system,Segoe UI,sans-serif;font-weight:600;color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.h{font-weight:800;line-height:1.12;letter-spacing:-.01em;}
+  p{font-weight:600;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  .kicker{font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:.78rem;color:var(--gold);}
+  .eyebrow{font-weight:800;letter-spacing:.05em;text-transform:uppercase;font-size:.8rem;color:var(--label);}
+
+  .topbar{position:sticky;top:0;z-index:50;background:var(--ink);border-bottom:1px solid rgba(244,161,0,.35);}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px;}
+  .brandline{color:var(--gold);font-weight:800;letter-spacing:.16em;font-size:.72rem;text-transform:uppercase;}
+  .brandline b{color:var(--white);}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,var(--btn-1),var(--btn-2));color:var(--ink);font-family:'Raleway';font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:.92rem;text-decoration:none;cursor:pointer;border:none;padding:16px 26px;border-radius:14px;box-shadow:0 10px 24px -10px rgba(225,181,94,.8);transition:transform .15s ease, box-shadow .15s ease;text-align:center;line-height:1.25;min-height:44px;}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 16px 30px -10px rgba(225,181,94,.9);}
+  .btn:active{transform:translateY(0);}
+  .btn-sm{padding:12px 18px;font-size:.78rem;border-radius:11px;min-height:44px;}
+  .btn .arrow{font-size:1.1em;}
+  .btn-ghost{background:transparent;color:var(--gold);border:1.5px solid rgba(244,161,0,.6);box-shadow:none;}
+  .btn-ghost:hover{background:rgba(244,161,0,.12);}
+  .cta-center{text-align:center;margin-top:30px;}
+
+  .hero{background:var(--ink);color:var(--cream);padding:58px 0 76px;position:relative;overflow:hidden;}
+  .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(900px 400px at 80% -10%,rgba(244,161,0,.12),transparent 60%);pointer-events:none;}
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;}
+  .hero h1{font-size:clamp(2.1rem,4.4vw,3.25rem);color:var(--white);margin:16px 0 14px;}
+  .hero h1 .hl{color:var(--gold);}
+  .hero .authorline{color:var(--on-dark);font-size:.95rem;font-weight:700;font-style:italic;margin-bottom:16px;border-left:3px solid var(--gold);padding-left:14px;}
+  .hero .sub{font-size:1.1rem;color:var(--on-dark);font-weight:600;max-width:32em;}
+  .price-row{margin:28px 0 8px;}
+  .price-ref{color:var(--on-dark-soft);font-size:.9rem;font-weight:600;}
+  .price-now{font-size:2.6rem;font-weight:900;color:var(--white);line-height:1;margin-top:4px;}
+  .price-now small{font-size:1rem;font-weight:700;color:var(--gold);vertical-align:super;margin-right:2px;}
+  .price-unit{font-size:.92rem;font-weight:700;color:var(--on-dark);}
+  .price-note{color:var(--gold-soft);font-size:.86rem;font-weight:700;margin-bottom:22px;}
+  .hero .cta-cluster{display:flex;flex-direction:column;gap:10px;max-width:460px;}
+  .selos{margin-top:14px;font-size:.82rem;color:var(--on-dark-soft);font-weight:600;}
+  .trustline{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:18px;font-size:.82rem;color:var(--on-dark);font-weight:600;}
+  .trustline span{display:inline-flex;align-items:center;gap:7px;}
+  .dotgold{width:6px;height:6px;border-radius:50%;background:var(--gold);display:inline-block;}
+
+  .cover{background:var(--cream);color:var(--ink);border:2px solid var(--gold-soft);border-radius:8px;padding:28px 26px 22px;box-shadow:0 40px 70px -25px rgba(0,0,0,.7), -14px 14px 0 -4px rgba(244,161,0,.18);transform:rotate(-1.4deg);}
+  .cover .c-series{font-size:.66rem;font-weight:800;letter-spacing:.14em;color:var(--label);text-transform:uppercase;}
+  .cover .c-title{font-size:2.5rem;font-weight:900;letter-spacing:-.02em;line-height:.95;margin:12px 0 6px;}
+  .cover .c-guide{font-size:1rem;font-weight:800;letter-spacing:.1em;color:var(--label);text-transform:uppercase;}
+  .cover .c-tag{font-style:italic;color:var(--gray);font-size:.84rem;margin:9px 0 14px;font-weight:600;}
+  .cover .c-promise{background:var(--white);border:1px solid var(--gold-soft);border-radius:6px;padding:12px 13px;font-size:.82rem;color:var(--ink);font-weight:600;}
+  .cover .c-strip{background:var(--ink);color:var(--gold);font-style:italic;font-weight:700;text-align:center;font-size:.79rem;padding:10px 12px;margin:14px 0 12px;border-radius:4px;border:1px solid var(--gold);}
+  .cover .c-seal{font-size:.68rem;color:var(--gray);text-align:center;font-weight:600;padding-top:9px;border-top:1px solid var(--gold-soft);}
+
+  section{padding:70px 0;}
+  .sec-head{max-width:44em;margin-bottom:36px;}
+  .sec-head h2{font-size:clamp(1.7rem,3vw,2.4rem);margin:12px 0 14px;position:relative;display:inline-block;}
+  .sec-head h2:after{content:"";display:block;width:64px;height:4px;background:var(--gold);margin-top:14px;border-radius:2px;}
+  .sec-head p{color:var(--gray);font-size:1.08rem;}
+  .center{text-align:center;}
+  .center .sec-head{margin-left:auto;margin-right:auto;}
+  .center .sec-head h2:after{margin-left:auto;margin-right:auto;}
+  .bg-white{background:var(--white);}
+  .bg-cream{background:var(--cream);}
+  .bg-ink{background:var(--ink);color:var(--cream);}
+  .bg-ink h2{color:var(--white);}
+  .bg-ink .sec-head p{color:var(--on-dark);}
+
+  .kit{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;text-align:left;}
+  .kit-piece{background:var(--white);border:1px solid #ece4c8;border-top:4px solid var(--gold);border-radius:0 0 12px 12px;padding:18px 18px 20px;}
+  .kit-piece .kp-tag{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--label);}
+  .kit-piece h3{font-size:1.05rem;margin:7px 0 5px;}
+  .kit-piece p{color:var(--gray);font-size:.9rem;}
+  .kit-note{margin-top:26px;font-style:italic;color:var(--gray);font-weight:600;}
+
+  .pains{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px;}
+  .pain{background:var(--white);border:1px solid #ece4c8;border-left:4px solid #cf5b3a;border-radius:0 12px 12px 0;padding:20px 22px;}
+  .pain b{color:var(--ink);font-weight:800;}
+  .pain p{color:var(--gray);font-size:.96rem;margin-top:4px;}
+  .acerto{margin-top:24px;background:var(--white);border:1px solid var(--gold-soft);border-left:4px solid #2e8b57;border-radius:0 12px 12px 0;padding:24px 26px;}
+  .acerto h3{font-size:1.15rem;margin-bottom:8px;}
+  .acerto p{color:var(--gray);font-size:1rem;}
+  .acerto .fecho{color:var(--ink);font-weight:800;margin-top:12px;}
+
+  .scenarios{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;text-align:left;}
+  .scenario{background:var(--white);border:1px solid #ece4c8;border-top:4px solid var(--gold);border-radius:0 0 14px 14px;padding:24px 24px 26px;display:flex;flex-direction:column;}
+  .scenario .sc-when{font-weight:800;font-size:1.08rem;color:var(--ink);display:flex;gap:10px;align-items:flex-start;margin-bottom:10px;line-height:1.2;}
+  .scenario .sc-when svg{flex:none;width:22px;height:22px;color:var(--label);margin-top:1px;}
+  .scenario p{color:var(--gray);font-size:.95rem;flex:1;}
+  .scenario .sc-caps{margin:14px 0 16px;font-weight:800;font-size:.78rem;letter-spacing:.04em;color:var(--label);}
+  .scenario .btn{align-self:flex-start;}
+  .sc-urg{margin-top:26px;font-style:italic;font-weight:700;color:var(--gray);font-size:1.02rem;}
+  @media(max-width:520px){ .scenario .btn{align-self:stretch;} }
+
+  .turn{max-width:46em;margin:0 auto;text-align:center;}
+  .turn .big{font-size:clamp(1.6rem,3.2vw,2.3rem);font-weight:900;color:var(--white);margin-bottom:18px;}
+  .turn .big em{color:var(--gold);font-style:normal;}
+  .turn p{color:var(--on-dark);font-size:1.1rem;}
+
+  .chapters{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;}
+  .chap{background:var(--white);border:1px solid #ece4c8;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .15s ease, box-shadow .15s ease;}
+  .chap:hover{transform:translateY(-4px);box-shadow:0 18px 36px -22px rgba(0,0,0,.4);}
+  .chap .ch-head{background:var(--ink);color:var(--white);padding:16px 20px;display:flex;align-items:center;gap:14px;}
+  .chap .ch-num{flex:none;width:42px;height:42px;border-radius:9px;background:var(--gold);color:var(--ink);font-weight:900;font-size:1.15rem;display:flex;align-items:center;justify-content:center;}
+  .chap .ch-head .ch-cap{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:800;}
+  .chap .ch-head h3{font-size:1.06rem;color:var(--white);line-height:1.15;}
+  .chap .ch-body{padding:18px 20px 22px;}
+  .chap ul{list-style:none;}
+  .chap li{position:relative;padding-left:24px;margin-bottom:9px;color:var(--gray);font-size:.93rem;font-weight:600;}
+  .chap li:before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:2px;background:var(--gold-soft);}
+
+  .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;}
+  .metric{background:rgba(244,161,0,.08);border:1px solid rgba(244,161,0,.3);border-radius:14px;padding:24px 18px;text-align:center;}
+  .metric .num{font-size:2.5rem;font-weight:900;color:var(--gold);line-height:1;}
+  .metric .lab{color:var(--on-dark);font-size:.88rem;font-weight:600;margin-top:8px;}
+  .bg-cream .metric{background:var(--white);border-color:#ece4c8;}
+  .bg-cream .metric .lab{color:var(--gray);}
+
+  .mini-offer{max-width:720px;margin:0 auto;background:var(--cream);border:2px solid var(--gold);border-radius:18px;padding:32px 34px;text-align:center;box-shadow:0 24px 50px -28px rgba(0,0,0,.4);}
+  .mini-offer .kicker{color:var(--label);}
+  .mini-offer h2{font-size:clamp(1.4rem,2.6vw,1.9rem);margin-bottom:14px;}
+  .mini-offer .incl{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;margin:0 auto 18px;max-width:560px;color:var(--ink);font-weight:600;font-size:.95rem;}
+  .mini-offer .incl span{display:inline-flex;align-items:center;gap:7px;}
+  .mini-offer .price-line{font-size:1.7rem;font-weight:900;color:var(--ink);margin:6px 0 4px;}
+  .mini-offer .price-line small{font-size:.95rem;color:var(--label);font-weight:700;}
+  .mini-offer .guar{color:var(--gray);font-size:.84rem;font-weight:600;margin-top:14px;}
+
+  .diffs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+  .diff{display:flex;gap:14px;align-items:flex-start;}
+  .diff .ic{flex:none;width:40px;height:40px;border-radius:10px;background:var(--gold);color:var(--ink);display:flex;align-items:center;justify-content:center;}
+  .diff .ic svg{width:20px;height:20px;display:block;}
+  .diff h3{font-size:1.06rem;margin-bottom:5px;}
+  .diff p{color:var(--gray);font-size:.95rem;}
+
+  .teses{display:grid;gap:14px;max-width:880px;margin:0 auto;}
+  .tese{background:var(--white);border:1px solid #ece4c8;border-radius:12px;padding:18px 22px;display:grid;grid-template-columns:1fr 1.3fr;gap:8px 24px;align-items:center;}
+  .tese .t-def{font-weight:800;color:#b0524b;font-size:.98rem;position:relative;padding-left:22px;}
+  .tese .t-def:before{content:"\201C";position:absolute;left:0;top:-4px;font-size:1.4rem;color:#cf5b3a;}
+  .tese .t-resp{color:var(--gray);font-size:.96rem;font-weight:600;}
+  .tese .t-resp b{color:var(--ink);}
+  .teses-fecho{text-align:center;font-weight:800;color:var(--ink);margin-top:24px;font-size:1.1rem;}
+
+  .forwho{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+  .fw{border-radius:14px;padding:26px;border:1px solid #ece4c8;background:var(--white);}
+  .fw.yes{border-top:4px solid #2e8b57;}
+  .fw.no{border-top:4px solid #b0524b;}
+  .fw h3{font-size:1.18rem;margin-bottom:14px;}
+  .fw ul{list-style:none;}
+  .fw li{position:relative;padding-left:28px;margin-bottom:11px;color:var(--gray);font-size:.97rem;font-weight:600;}
+  .fw.yes li:before{content:"\2713";position:absolute;left:0;top:0;color:#2e8b57;font-weight:900;}
+  .fw.no li:before{content:"\2715";position:absolute;left:0;top:0;color:#b0524b;font-weight:900;}
+
+  .prof{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center;}
+  .prof .ph{background:linear-gradient(160deg,#2a2a2a,#181818);border:1px dashed rgba(244,161,0,.5);border-radius:16px;aspect-ratio:1/1.1;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--gold);text-align:center;padding:24px;}
+  .prof .ph .mono{font-size:3.4rem;font-weight:900;letter-spacing:.04em;}
+  .prof .ph .note{font-size:.74rem;color:#b8b29c;margin-top:14px;font-weight:600;}
+  .prof h2{color:var(--white);}
+  .prof .role{color:var(--gold);font-weight:800;letter-spacing:.04em;margin-bottom:14px;}
+  .prof p{color:var(--on-dark);margin-bottom:14px;font-size:1.04rem;}
+  .prof .credgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-top:18px;}
+  .prof .credgrid .metric{padding:18px 12px;}
+  .prof .credgrid .num{font-size:1.6rem;}
+  .prof .credgrid .lab{font-size:.78rem;}
+
+  .depo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;text-align:left;}
+  .depo{background:var(--white);border:2px dashed var(--gold-soft);border-radius:14px;padding:22px 24px;}
+  .depo .ph-flag{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800;color:var(--label);margin-bottom:10px;}
+  .depo .quote{color:var(--gray);font-style:italic;font-size:.98rem;}
+  .depo .who{margin-top:14px;font-weight:800;color:var(--ink);font-size:.92rem;}
+  .depo .who span{display:block;font-weight:600;color:var(--gray);font-size:.82rem;}
+
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;}
+  .step{background:var(--white);border:1px solid #ece4c8;border-radius:14px;padding:24px;text-align:left;}
+  .step .s-num{width:38px;height:38px;border-radius:50%;background:var(--ink);color:var(--gold);font-weight:900;display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
+  .step h3{font-size:1.05rem;margin-bottom:6px;}
+  .step p{color:var(--gray);font-size:.94rem;}
+
+  .guarantee-block{max-width:760px;margin:0 auto;background:var(--white);border:1px solid var(--gold-soft);border-radius:16px;padding:32px 36px;display:flex;gap:24px;align-items:flex-start;}
+  .guarantee-block .seal{flex:none;width:70px;height:70px;border-radius:50%;border:3px solid var(--gold);color:var(--label);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.4rem;line-height:1;text-align:center;}
+  .guarantee-block h3{font-size:1.25rem;margin-bottom:8px;}
+  .guarantee-block p{color:var(--gray);font-size:.98rem;}
+
+  .faq{max-width:800px;margin:0 auto;}
+  details.qa{background:var(--white);border:1px solid #ece4c8;border-radius:12px;margin-bottom:12px;overflow:hidden;}
+  details.qa summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:800;font-size:1.04rem;display:flex;justify-content:space-between;align-items:center;gap:16px;color:var(--ink);}
+  details.qa summary::-webkit-details-marker{display:none;}
+  details.qa summary:after{content:"+";color:var(--label);font-weight:900;font-size:1.5rem;flex:none;}
+  details.qa[open] summary:after{content:"\2013";}
+  details.qa .ans{padding:0 22px 20px;color:var(--gray);font-size:.98rem;font-weight:600;}
+
+  .offer{max-width:760px;margin:0 auto;background:var(--cream);border:2px solid var(--gold);border-radius:20px;padding:42px 40px;text-align:center;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);}
+  .offer .kicker{color:var(--label);}
+  .offer h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:10px;}
+  .offer .incl{text-align:left;max-width:540px;margin:24px auto;display:grid;gap:11px;}
+  .offer .incl li{list-style:none;position:relative;padding-left:30px;color:var(--ink);font-weight:600;font-size:1rem;}
+  .offer .incl li:before{content:"\2713";position:absolute;left:0;top:0;color:#2e8b57;font-weight:900;font-size:1.1rem;}
+  .offer .bonus{background:var(--white);border:1px solid var(--gold-soft);border-radius:12px;padding:16px 18px;margin:6px auto 20px;max-width:540px;text-align:left;}
+  .offer .bonus .b-tag{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--label);}
+  .offer .bonus p{font-size:.93rem;color:var(--gray);margin-top:5px;}
+  .offer .bonus b{color:var(--ink);}
+  .offer .pref{color:var(--gray);font-size:.9rem;font-weight:600;}
+  .offer .pbox{display:flex;align-items:baseline;justify-content:center;gap:12px;margin:4px 0 20px;}
+  .offer .pbox .now{font-size:3rem;font-weight:900;color:var(--ink);line-height:1;}
+  .offer .pbox .now small{font-size:1.1rem;color:var(--label);vertical-align:super;margin-right:2px;}
+  .offer .pbox .ctx{color:var(--gray);font-size:.9rem;font-weight:600;}
+  .offer .guarantee{margin-top:20px;color:var(--gray);font-size:.86rem;font-weight:600;}
+  .offer .secure{margin-top:8px;color:var(--label);font-size:.78rem;font-weight:600;}
+
+  .eco{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:14px;text-align:left;}
+  .eco-card{background:var(--white);border:1px solid #ece4c8;border-radius:14px;padding:22px;}
+  .eco-card .tag{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--label);}
+  .eco-card h3{font-size:1.1rem;margin:8px 0 6px;}
+  .eco-card p{color:var(--gray);font-size:.92rem;margin-bottom:14px;}
+  .eco-card .price{font-weight:900;color:var(--ink);font-size:1.05rem;}
+
+  .disclaimer{background:var(--ink);color:var(--on-dark-soft);padding:44px 0;font-size:.82rem;}
+  .disclaimer .wrap{max-width:780px;}
+  .disclaimer .note{border-left:3px solid var(--gold-muted);padding:6px 0 6px 18px;font-style:italic;line-height:1.7;}
+  .disclaimer .contato{margin-top:20px;font-weight:600;}
+  .disclaimer .contato a{color:var(--gold-soft);text-decoration:none;}
+  footer{background:#0f0f0f;color:#8a8576;text-align:center;padding:30px 0;font-size:.8rem;font-weight:600;}
+  footer .sig{color:var(--gold);font-weight:800;}
+
+  .mobile-cta{display:none;}
+
+  @media(max-width:880px){
+    .hero .wrap{grid-template-columns:1fr;gap:40px;}
+    .cover{transform:rotate(0);max-width:420px;margin:0 auto;}
+    .prof{grid-template-columns:1fr;gap:26px;}
+    .prof .ph{max-width:300px;margin:0 auto;aspect-ratio:1/1;}
+    .forwho{grid-template-columns:1fr;}
+    .tese{grid-template-columns:1fr;gap:6px;}
+    .topbar .btn{display:none;}
+    section{padding:54px 0;}
+    .mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 16px;background:var(--ink);border-top:1px solid rgba(244,161,0,.4);box-shadow:0 -8px 24px -12px rgba(0,0,0,.6);}
+    .mobile-cta .mc-price{color:#fff;font-weight:700;font-size:.86rem;line-height:1.2;}
+    .mobile-cta .mc-price b{color:var(--gold);font-size:1.05rem;}
+    body{padding-bottom:78px;}
+    .guarantee-block{flex-direction:column;align-items:center;text-align:center;}
+  }
+  @media(max-width:520px){
+    .brandline{font-size:.6rem;}
+    .hero h1{font-size:2rem;}
+    .cover .c-title{font-size:2rem;}
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="brandline">Série Playbook do Reclamante&nbsp;·&nbsp;<b>Volume 01</b></div>
+    <a href="https://exemplo-trocar.com/checkout-playbook-burnout" class="btn btn-sm">Quero o Playbook</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Playbook Burnout · Guia rápido do reclamante</div>
+      <h1>Pare de ver a tese de <span class="hl">Burnout</span> sumir no laudo pericial.</h1>
+      <p class="authorline">Escrito por quem litiga acidente de trabalho e doença ocupacional há mais de uma década. E vive dos honorários que recebe desses processos.</p>
+      <p class="sub">Da triagem do caso aos quesitos que o perito não consegue ignorar. Um guia curto, denso, pronto para aplicar no próximo processo. Com 4 blocos prontos para a inicial, baterias de perguntas para a audiência e 10 acórdãos reais de procedência.</p>
+
+      <div class="price-row">
+        <div class="price-ref">Uma única aula avulsa desta série custa R$ 29,90.</div>
+        <div class="price-now"><small>R$</small> 19,90 <span class="price-unit">· Volume 01, pagamento único</span></div>
+      </div>
+      <div class="price-note">O guia completo, com os sete capítulos, pronto para aplicar.</div>
+
+      <div class="cta-cluster">
+        <a href="https://exemplo-trocar.com/checkout-playbook-burnout" class="btn">Quero o Playbook Burnout <span class="arrow">→</span></a>
+        <div class="selos">Garantia de 7 dias (art. 49, CDC) · Acesso imediato em PDF · Pagamento em ambiente seguro</div>
+      </div>
+
+      <div class="trustline">
+        <span><i class="dotgold"></i> Edição independente</span>
+        <span><i class="dotgold"></i> Atualizado para a NR-1 (2025)</span>
+        <span><i class="dotgold"></i> Referências com DOI verificável</span>
+      </div>
+    </div>
+
+    <div class="cover">
+      <div class="c-series">Série Playbook do Reclamante · Volume 01</div>
+      <div class="c-title">PLAYBOOK<br>BURNOUT</div>
+      <div class="c-guide">Guia Rápido</div>
+      <div class="c-tag">Da triagem aos quesitos: pronto para aplicar no processo.</div>
+      <div class="c-promise">CID-11 QD85 · doença ocupacional por decreto. O método que converte o relato da sua cliente em prova de nexo que o perito e o juiz não conseguem ignorar.</div>
+      <div class="c-strip">Para advogados que se recusam a atuar de forma passiva.</div>
+      <div class="c-seal">Edição independente · Atualizado para a NR-1 (riscos psicossociais, 2025)</div>
+    </div>
+  </div>
+</header>
+
+<!-- KIT / ARSENAL -->
+<section class="bg-white center">
+  <div class="wrap">
+    <div class="sec-head" style="margin-left:auto;margin-right:auto">
+      <div class="eyebrow">O que vem no guia</div>
+      <h2>Não é teoria. É um arsenal pronto para o processo.</h2>
+      <p>Seis frentes de trabalho, todas escritas para copiar, trocar os [placeholders] pelas fls. do seu caso e aplicar: da triagem ao recurso.</p>
+    </div>
+    <div class="kit">
+      <div class="kit-piece"><div class="kp-tag">Capítulo II</div><h3>Checklist de triagem</h3><p>Decida em 15 minutos se o caso é viável: 5 sinais verdes, 5 vermelhos.</p></div>
+      <div class="kit-piece"><div class="kp-tag">Capítulo III</div><h3>4 blocos prontos para a inicial</h3><p>Fatos com modelos, Bradford Hill, refutação da concausa e omissão da NR-1.</p></div>
+      <div class="kit-piece"><div class="kp-tag">Capítulo IV</div><h3>Baterias de perguntas</h3><p>Para preposto e testemunhas: abertas, para arrancar a confissão.</p></div>
+      <div class="kit-piece"><div class="kp-tag">Capítulo V</div><h3>Quesitos de nexo e dano</h3><p>Com intenção, prontos para adaptar. E como refutar o laudo.</p></div>
+      <div class="kit-piece"><div class="kp-tag">Capítulo VI</div><h3>Recurso Ordinário</h3><p>Como desmontar a sentença de improcedência: fluxo, preliminares e mérito.</p></div>
+      <div class="kit-piece"><div class="kp-tag">Capítulo VII</div><h3>10 acórdãos reais</h3><p>Decisões de procedência: a prova que decidiu e o que o advogado fez.</p></div>
+    </div>
+    <p class="kit-note">Sete capítulos. Um guia só, denso, do começo ao fim do processo.</p>
+  </div>
+</section>
+
+<!-- DOR -->
+<section class="bg-cream">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Você reconhece a cena</div>
+      <h2>O caso era bom. Ele evaporou na perícia.</h2>
+      <p>O Burnout chega ao escritório com prova, cronologia e atestados. E mesmo assim a improcedência vem logo atrás. Quase sempre, pelos mesmos motivos.</p>
+    </div>
+    <div class="pains">
+      <div class="pain"><b>“Burnout é só um fenômeno, não é doença.”</b><p>O perito repete o sofisma, nega o nexo e você não tem a resposta técnica na ponta da língua.</p></div>
+      <div class="pain"><b>A inicial não prepara o terreno.</b><p>Você narra o sofrimento da cliente. Mas o relato vira desabafo, não prova de nexo. A defesa abre a porta da multifatorialidade.</p></div>
+      <div class="pain"><b>Faltam as perguntas que confessam.</b><p>Na audiência, o preposto escapa. Você não conduz a oitiva para arrancar a confissão real, nem a confissão por desconhecimento.</p></div>
+      <div class="pain"><b>Os quesitos saem genéricos.</b><p>Copiados de modelo, sem intenção. O perito ignora, o laudo nega, e o caso desanda antes de chegar à sentença.</p></div>
+      <div class="pain"><b>O valor do caso fica na mesa.</b><p>Pensão, estabilidade acidentária e dano que justificavam o esforço se perdem por insegurança técnica.</p></div>
+      <div class="pain"><b>A perícia ainda é uma caixa preta.</b><p>Você sente que não controla a fase que decide tudo. E torce para ter sorte com o perito.</p></div>
+    </div>
+    <div class="acerto">
+      <h3>Do outro lado, quem domina a fase pericial não torce pela sorte.</h3>
+      <p>Leva à audiência as perguntas que confessam, protocola quesitos com intenção e sobrepõe ao laudo seis revisões e meta-análises com DOI. Quando a defesa alega “fenômeno” ou “multifatorialidade”, a resposta já está escrita na inicial. O mesmo caso, conduzido com método, para de evaporar.</p>
+      <p class="fecho">Improcedências evitáveis são honorários que você deixou na mesa. Isso tem técnica. E técnica se aprende.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EM QUE PONTO ESTÁ O SEU CASO -->
+<section class="bg-white center">
+  <div class="wrap">
+    <div class="sec-head" style="margin-left:auto;margin-right:auto">
+      <div class="eyebrow">Em que ponto está o seu caso?</div>
+      <h2>O guia foi feito para o momento em que você está agora.</h2>
+      <p>Você provavelmente não chegou aqui por acaso. Tem um prazo correndo. Veja onde o guia entra.</p>
+    </div>
+    <div class="scenarios">
+      <div class="scenario">
+        <div class="sc-when"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/><path d="m10 13 4 4"/><path d="m14 13-4 4"/></svg>O laudo chegou e negou o nexo.</div>
+        <p>O prazo da impugnação já está correndo. O guia te dá a pirâmide de evidências para sobrepor ao laudo, os quesitos e o método de refutação, e 10 acórdãos em que advogados viraram exatamente esse jogo.</p>
+        <div class="sc-caps">Cap. I · Cap. V · Cap. VII</div>
+        <a href="https://exemplo-trocar.com/checkout-playbook-burnout" class="btn btn-sm">Quero o caminho para impugnar <span class="arrow">→</span></a>
+      </div>
+      <div class="scenario">
+        <div class="sc-when"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18"/><path d="M7 21h10"/><path d="M5 7h14"/><path d="M5 7l-2.5 6a3 3 0 0 0 5 0Z"/><path d="M19 7l-2.5 6a3 3 0 0 0 5 0Z"/></svg>Veio a sentença de improcedência.</div>
+        <p>O prazo do Recurso Ordinário não espera. O guia te dá o fluxo do RO, as preliminares e o mérito para desmontar a sentença, ancorados nos fundamentos que já venceram.</p>
+        <div class="sc-caps">Cap. VI · Cap. VII</div>
+        <a href="https://exemplo-trocar.com/checkout-playbook-burnout" class="btn btn-sm">Quero o caminho para recorrer <span class="arrow">→</span></a>
+      </div>
+      <div class="scenario">
+        <div class="sc-when"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>Você vai ajuizar agora.</div>
+        <p>Monte a inicial que prepara o terreno para a perícia: 4 blocos prontos para colar e a triagem que protege o escritório de uma improcedência.</p>
+        <div class="sc-caps">Cap. II · Cap. III</div>
+        <a href="https://exemplo-trocar.com/checkout-playbook-burnout" class="btn btn-sm">Quero montar a inicial certa <span class="arrow">→</span></a>
+      </div>
+    </div>
+    <p class="sc-urg">Quando o laudo chega, o relógio do processo já está correndo.</p>
+  </div>
+</section>
+
+<!-- VIRADA -->
+<section class="bg-ink center">
+  <div class="wrap">
+    <div class="turn">
+      <div class="big">Atuar em Burnout não depende de sorte, improviso ou da boa vontade do perito. <em>Depende de método.</em></div>
+      <p>O Playbook Burnout é a engenharia da tese, de ponta a ponta: os quatro modelos científicos do adoecimento, a triagem que protege o escritório, a inicial que antecipa a defesa, a oitiva que confessa, os quesitos com intenção, o recurso que desmonta a improcedência, e dez casos reais de quem venceu.</p>
+    </div>
+    <div class="cta-center"><a href="https://exemplo-trocar.com/checkout-playbook-burnout" class="btn btn-ghost">Quero o método, não a sorte <span class="arrow">→</span></a></div>
+  </div>
+</section>
+
+<!-- CAPÍTULOS -->
+<section class="bg-white center">
+  <div class="wrap">
+    <div class="sec-head" style="margin-left:auto;margin-right:auto">
+      <div class="eyebrow">Como o guia funciona</div>
+      <h2>Capítulo a capítulo, do conceito ao recurso.</h2>
+      <p>Cada capítulo é independente. Tem audiência amanhã? Vá direto ao Capítulo IV. Está montando a inicial? Capítulo III. Você lê o que precisa e age.</p>
+    </div>
+    <div class="chapters" style="text-align:left">
+      <div class="chap"><div class="ch-head"><div class="ch-num">I</div><div><div class="ch-cap">Capítulo I</div><h3>Como o trabalho adoece</h3></div></div><div class="ch-body"><ul><li>A armadilha do “fenômeno” desarmada: CID-11 QD85 e doença ocupacional por decreto</li><li>Os 4 modelos do adoecimento: Karasek, Siegrist, JD-R e injustiça organizacional</li><li>A pirâmide de evidências: sobreponha ciência ao laudo, não ataque o perito</li><li>6 revisões e meta-análises de Burnout com DOI: munição contra “é subjetivo”</li></ul></div></div>
+      <div class="chap"><div class="ch-head"><div class="ch-num">II</div><div><div class="ch-cap">Capítulo II</div><h3>Triagem do caso</h3></div></div><div class="ch-body"><ul><li>Os 5 sinais verdes e os 5 sinais vermelhos</li><li>Checklist para decidir em 15 minutos: entrar ou recusar</li><li>Proteja o escritório da improcedência e da sucumbência</li></ul></div></div>
+      <div class="chap"><div class="ch-head"><div class="ch-num">III</div><div><div class="ch-cap">Capítulo III</div><h3>Petição inicial</h3></div></div><div class="ch-body"><ul><li>Estrutura de 8 partes que antecipa a defesa</li><li>4 blocos prontos para colar: fatos com modelos, Bradford Hill, refutação da concausa, omissão da NR-1</li><li>A técnica fato + modelo + prova: converter relato em nexo</li></ul></div></div>
+      <div class="chap"><div class="ch-head"><div class="ch-num">IV</div><div><div class="ch-cap">Capítulo IV</div><h3>Perguntas para audiência</h3></div></div><div class="ch-body"><ul><li>A mentalidade da oitiva: confissão real x ficta (Súmula 74, II, TST)</li><li>Baterias de perguntas abertas por modelo: preposto e testemunhas</li><li>Armadilhas para a testemunha da ré e confronto documental</li></ul></div></div>
+      <div class="chap"><div class="ch-head"><div class="ch-num">V</div><div><div class="ch-cap">Capítulo V</div><h3>Quesitos à perícia</h3></div></div><div class="ch-body"><ul><li>A mentalidade do quesito com intenção</li><li>Quesitos de nexo e de dano, prontos para adaptar</li><li>Como refutar o laudo que nega o nexo</li></ul></div></div>
+      <div class="chap"><div class="ch-head"><div class="ch-num">VI</div><div><div class="ch-cap">Capítulo VI</div><h3>Recurso Ordinário</h3></div></div><div class="ch-body"><ul><li>Como desmontar a sentença de improcedência</li><li>O fluxo do recurso, as preliminares e o mérito</li><li>Reabrir o caso que parecia perdido na primeira instância</li></ul></div></div>
+      <div class="chap"><div class="ch-head"><div class="ch-num">VII</div><div><div class="ch-cap">Capítulo VII</div><h3>10 casos de procedência</h3></div></div><div class="ch-body"><ul><li>Acórdãos reais de Burnout, não inventados</li><li>A prova que decidiu cada caso</li><li>O que o advogado fez, na prática, para vencer</li></ul></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTRICAS -->
+<section class="bg-ink center">
+  <div class="wrap">
+    <div class="metrics">
+      <div class="metric"><div class="num">7</div><div class="lab">capítulos independentes</div></div>
+      <div class="metric"><div class="num">4</div><div class="lab">blocos prontos para colar</div></div>
+      <div class="metric"><div class="num">10</div><div class="lab">acórdãos reais de procedência</div></div>
+      <div class="metric"><div class="num">6</div><div class="lab">revisões e meta-análises com DOI</div></div>
+      <div class="metric"><div class="num">4</div><div class="lab">modelos de adoecimento</div></div>
+    </div>
+    <div class="cta-center"><a href="https://exemplo-trocar.com/checkout-playbook-burnout" class="btn btn-ghost">Quero esse ferramental no próximo processo <span class="arrow">→</span></a></div>
+  </div>
+</section>
+
+<!-- MINI OFERTA -->
+<section class="bg-cream center">
+  <div class="wrap">
+    <div class="mini-offer">
+      <div class="kicker">Playbook Burnout · Volume 01</div>
+      <h2>Você já viu o que está dentro. Tenha o guia na sua mão hoje.</h2>
+      <div class="incl">
+        <span><i class="dotgold"></i> 7 capítulos</span>
+        <span><i class="dotgold"></i> 4 blocos prontos</span>
+        <span><i class="dotgold"></i> Quesitos e perguntas</span>
+        <span><i class="dotgold"></i> 10 acórdãos reais</span>
+      </div>
+      <div class="price-line"><small>R$</small> 19,90 <small>· pagamento único · acesso imediato em PDF</small></div>
+      <a href="https://exemplo-trocar.com/checkout-playbook-burnout" class="btn">Quero o Playbook Burnout <span class="arrow">→</span></a>
+      <div class="guar">Garantia de 7 dias: direito de arrependimento (art. 49, CDC)</div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="bg-white">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Por que este guia é diferente</div>
+      <h2>Escrito por quem atua de verdade.</h2>
+      <p>Não é teoria empacotada. É o repertório de quem milita em ações de acidente e doença ocupacional, virado em ferramenta.</p>
+    </div>
+    <div class="diffs">
+      <div class="diff"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg></div><div><h3>Pronto para colar</h3><p>Modelos com [placeholders]. Você troca pelas fls. do seu caso, mantém a tríade fato + modelo + prova e protocola.</p></div></div>
+      <div class="diff"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div><h3>Ciência verificável</h3><p>Toda referência traz o DOI real. Nada de jurisprudência ou estudo citado de memória. Você confere a fonte.</p></div></div>
+      <div class="diff"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/><path d="m9 14 2 2 4-4"/></svg></div><div><h3>Prova que decidiu</h3><p>Dez acórdãos reais de procedência: o que entrou nos autos e como o nexo foi reconhecido. Engenharia reversa da vitória.</p></div></div>
+      <div class="diff"><div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 4v5h-5"/></svg></div><div><h3>No tempo da norma</h3><p>Atualizado para a NR-1 e os riscos psicossociais (2025): use a omissão do PGR para inverter o ônus da prova.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ANTIOBJEÇÃO / TESES -->
+<section class="bg-cream center">
+  <div class="wrap">
+    <div class="sec-head" style="margin-left:auto;margin-right:auto">
+      <div class="eyebrow">A audiência que decide</div>
+      <h2>A defesa já tem o roteiro dela. Você precisa do seu.</h2>
+      <p>As quatro teses que vêm contra a sua. E onde, no guia, está a resposta técnica para cada uma.</p>
+    </div>
+    <div class="teses">
+      <div class="tese"><div class="t-def">Burnout é fenômeno, não doença.</div><div class="t-resp"><b>CID-11 QD85</b> e a leitura correta da classificação da OMS. <b>Capítulo I.</b></div></div>
+      <div class="tese"><div class="t-def">O quadro é multifatorial.</div><div class="t-resp">Bloco de <b>refutação preventiva da concausa</b>, ancorado nos critérios de Bradford Hill. <b>Capítulo III.</b></div></div>
+      <div class="tese"><div class="t-def">O diagnóstico é subjetivo.</div><div class="t-resp"><b>Seis revisões sistemáticas e meta-análises</b> com DOI, para sobrepor ao laudo. <b>Capítulo I.</b></div></div>
+      <div class="tese"><div class="t-def">O laudo já negou o nexo.</div><div class="t-resp">Método para <b>refutar o laudo</b> e levar a tese ao Recurso Ordinário. <b>Capítulos V e VI.</b></div></div>
+    </div>
+    <p class="teses-fecho">Você não vai improvisar a resposta na audiência. Vai chegar com ela escrita.</p>
+  </div>
+</section>
+
+<!-- PARA QUEM É -->
+<section class="bg-white">
+  <div class="wrap">
+    <div class="sec-head center" style="margin-left:auto;margin-right:auto">
+      <div class="eyebrow">Antes de comprar</div>
+      <h2>Para quem é, e para quem não é.</h2>
+    </div>
+    <div class="forwho">
+      <div class="fw yes">
+        <h3>É para você se…</h3>
+        <ul>
+          <li>Atua para o reclamante e cansou de ver a tese de Burnout sumir no laudo.</li>
+          <li>Quer ocupar a tese de Burnout antes da concorrência na sua região.</li>
+          <li>Precisa chegar à perícia com quesitos que o perito não consiga ignorar.</li>
+          <li>Tem uma audiência ou um prazo chegando e quer um material para aplicar hoje.</li>
+          <li>Pega causas trabalhistas e quer parar de recusar (ou perder) os casos acidentários.</li>
+        </ul>
+      </div>
+      <div class="fw no">
+        <h3>Não é para você se…</h3>
+        <ul>
+          <li>Procura um tratado doutrinário longo e teórico. Este é um guia rápido de aplicação.</li>
+          <li>Atua só para a empresa reclamada (todo o material é construído a favor do reclamante).</li>
+          <li>Espera uma promessa de resultado garantido. Aqui o que se entrega é método.</li>
+          <li>Não pretende levar o caso à perícia. Sem perícia, em regra, não há nexo reconhecido.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFESSOR -->
+<section class="bg-ink">
+  <div class="wrap">
+    <div class="prof">
+      <div class="ph">
+        <div class="mono">FS</div>
+        <div class="note">[ substituir por uma foto do professor ]</div>
+      </div>
+      <div>
+        <div class="eyebrow" style="color:var(--gold-muted)">Quem escreve</div>
+        <h2>Prof. Felipe Scherer</h2>
+        <div class="role">Advogado militante de reclamantes em acidente de trabalho e doença ocupacional</div>
+        <p>Mais de dez anos do mesmo lado da trincheira, em acidente de trabalho e doença ocupacional, em Porto Alegre. Foram mais de 3.000 processos conduzidos. É dessa rotina, não da teoria, que sai cada quesito e cada bloco deste material.</p>
+        <p>São mais de R$ 10 milhões em honorários, construídos processo a processo. Esse número não está aqui para impressionar: ele só existe porque cada caso foi conduzido com o mesmo método que você vai encontrar no Playbook. É a prova de que isto funciona na prática, não no slide.</p>
+        <p>Criador do PAT 2.0, treinamento de prática acidentária para advogados de todo o Brasil. O Playbook do Reclamante é uma edição independente e autoral, não uma peça de escritório.</p>
+        <div class="credgrid">
+          <div class="metric"><div class="num">+10</div><div class="lab">anos na advocacia do reclamante</div></div>
+          <div class="metric"><div class="num">+3.000</div><div class="lab">processos conduzidos</div></div>
+          <div class="metric"><div class="num">+R$ 10 mi</div><div class="lab">em honorários, processo a processo</div></div>
+          <div class="metric"><div class="num">PAT 2.0</div><div class="lab">treinamento que dirige</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS (placeholder) -->
+<section class="bg-white center">
+  <div class="wrap">
+    <div class="sec-head" style="margin-left:auto;margin-right:auto">
+      <div class="eyebrow">Quem já aplicou</div>
+      <h2>Advogados que usaram o material.</h2>
+      <p>Espaço reservado para depoimentos reais: nome, OAB e cidade, sempre com autorização. (Substituir os exemplos abaixo por relatos verdadeiros antes de publicar.)</p>
+    </div>
+    <div class="depo-grid">
+      <div class="depo"><div class="ph-flag">Exemplo: substituir por depoimento real</div><p class="quote">“[Relato verbatim do advogado sobre como o material o ajudou na prática: estruturar a inicial, conduzir a audiência, refutar o laudo.]”</p><div class="who">Nome do(a) advogado(a) <span>OAB/UF 00.000 · Cidade</span></div></div>
+      <div class="depo"><div class="ph-flag">Exemplo: substituir por depoimento real</div><p class="quote">“[Relato verbatim: o que mudou na condução dos casos de Burnout depois de aplicar os blocos e os quesitos do guia.]”</p><div class="who">Nome do(a) advogado(a) <span>OAB/UF 00.000 · Cidade</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO VOCÊ RECEBE -->
+<section class="bg-cream center">
+  <div class="wrap">
+    <div class="sec-head" style="margin-left:auto;margin-right:auto">
+      <div class="eyebrow">Simples assim</div>
+      <h2>Como você recebe.</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="s-num">1</div><h3>Você adquire</h3><p>Pagamento único de R$ 19,90, em ambiente seguro.</p></div>
+      <div class="step"><div class="s-num">2</div><h3>Você recebe na hora</h3><p>Confirmado o pagamento, o acesso ao PDF é liberado de imediato para download.</p></div>
+      <div class="step"><div class="s-num">3</div><h3>Você aplica já</h3><p>Abra direto no capítulo que o seu caso exige e leve a técnica para o processo que está na sua mesa esta semana.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="bg-white">
+  <div class="wrap">
+    <div class="guarantee-block">
+      <div class="seal">7<br>dias</div>
+      <div>
+        <h3>O risco é meu, não seu.</h3>
+        <p>Leia o Playbook. Aplique os 4 blocos na sua próxima inicial. Monte os quesitos. Se, dentro de 7 dias, você concluir que o material não é o que prometi, peça o reembolso. É o seu direito de arrependimento, art. 49 do Código de Defesa do Consumidor, e eu o cumpro sem discussão. Quem confia no próprio método não dificulta a saída de quem desistiu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-cream center">
+  <div class="wrap">
+    <div class="sec-head" style="margin-left:auto;margin-right:auto">
+      <div class="eyebrow">Dúvidas frequentes</div>
+      <h2>O que costumam perguntar.</h2>
+    </div>
+    <div class="faq" style="text-align:left">
+      <details class="qa"><summary>É só mais teoria?</summary><div class="ans">Não. É um guia de aplicação prática. Os 4 blocos da inicial e os quesitos vêm prontos, com [placeholders] para você trocar pelas fls. do seu caso e colar. O Capítulo VII traz 10 acórdãos reais para você ver, na prática, o que decidiu cada caso.</div></details>
+      <details class="qa"><summary>Não tenho tempo. Quanto vou levar para usar?</summary><div class="ans">O guia é curto de propósito e cada capítulo é independente. Tem audiência amanhã? Leia só o Capítulo IV. Está montando a inicial? Vá ao III. Você lê o que precisa, fica municiado e age, sem percorrer o material inteiro.</div></details>
+      <details class="qa"><summary>Pego poucos casos de acidente por ano. Vale a pena?</summary><div class="ans">R$ 19,90 é o preço de uma decisão técnica. Um único caso de Burnout conduzido até a procedência, com pensão, estabilidade acidentária e dano moral reconhecidos, vale milhares em honorários; diante disso, o custo deste guia desaparece. O material não garante o resultado: organiza o método que aumenta a probabilidade de você chegar lá e de aceitar, com segurança técnica, os casos que hoje recusa.</div></details>
+      <details class="qa"><summary>As referências científicas são confiáveis?</summary><div class="ans">Todas as referências citadas são reais e verificáveis pelos DOI indicados no próprio material. A proposta é que você possa conferir e juntar os estudos aos autos.</div></details>
+      <details class="qa"><summary>Como recebo o material?</summary><div class="ans">É um PDF com acesso imediato após a confirmação do pagamento. Você baixa e já pode aplicar no próximo processo.</div></details>
+      <details class="qa"><summary>E se não for para mim?</summary><div class="ans">Você tem o prazo de arrependimento de 7 dias, previsto no art. 49 do Código de Defesa do Consumidor para compras on-line. Se não fizer sentido, é só solicitar o reembolso dentro desse prazo.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA FINAL -->
+<section class="bg-ink">
+  <div class="wrap">
+    <div class="offer">
+      <div class="kicker">Playbook Burnout · Volume 01</div>
+      <h2>Tenha o guia completo na sua mão hoje.</h2>
+      <ul class="incl">
+        <li>Os 7 capítulos, da triagem do caso ao Recurso Ordinário</li>
+        <li>4 blocos prontos para a petição inicial, prontos para colar</li>
+        <li>Baterias de perguntas por modelo para a audiência</li>
+        <li>Quesitos de nexo e dano, e como refutar o laudo</li>
+        <li>10 acórdãos reais de procedência analisados</li>
+        <li>Referências científicas com DOI verificável e atualização para a NR-1</li>
+      </ul>
+      <div class="bonus">
+        <div class="b-tag">Bônus incluso</div>
+        <p><b>Dossiê de DOIs pronto para juntada:</b> as revisões e meta-análises citadas no guia, organizadas com referência completa e link verificável, para você anexar aos autos sem reabrir a pesquisa.</p>
+      </div>
+      <div class="pref">Uma aula avulsa desta série custa R$ 29,90. Este guia, com os sete capítulos, custa R$ 19,90.</div>
+      <div class="pbox">
+        <div class="now"><small>R$</small> 19,90</div>
+        <div class="ctx">pagamento único · acesso imediato</div>
+      </div>
+      <a href="https://exemplo-trocar.com/checkout-playbook-burnout" class="btn" style="font-size:1rem;padding:18px 32px">Quero o Playbook Burnout <span class="arrow">→</span></a>
+      <div class="guarantee">Garantia de 7 dias: direito de arrependimento (art. 49, CDC)</div>
+      <div class="secure">Pagamento processado em ambiente seguro</div>
+    </div>
+  </div>
+</section>
+
+<!-- ECOSSISTEMA -->
+<section class="bg-cream center">
+  <div class="wrap">
+    <div class="sec-head" style="margin-left:auto;margin-right:auto">
+      <div class="eyebrow">Depois do Playbook</div>
+      <h2>O caminho continua.</h2>
+      <p>O Playbook é o ponto de partida. Quando quiser aprofundar a fase que mais doeu no seu caso, o ecossistema continua.</p>
+    </div>
+    <div class="eco">
+      <div class="eco-card"><div class="tag">Aula avulsa</div><h3>Prova Testemunhal</h3><p>A condução da oitiva, na prática: onde a mesma pergunta gera resultados diferentes.</p><div class="price">1h27 · R$ 29,90</div><a href="https://exemplo-trocar.com/aula-prova-testemunhal" class="btn btn-ghost btn-sm" style="margin-top:14px">Conhecer a aula</a></div>
+      <div class="eco-card"><div class="tag">Aula avulsa</div><h3>Depoimento das Partes</h3><p>Como arrancar a confissão real do preposto e blindar o depoimento do seu cliente.</p><div class="price">+1h13 · R$ 29,90</div><a href="https://exemplo-trocar.com/aula-depoimento-partes" class="btn btn-ghost btn-sm" style="margin-top:14px">Conhecer a aula</a></div>
+      <div class="eco-card"><div class="tag">Treinamento completo</div><h3>PAT 2.0</h3><p>Prática em Acidente de Trabalho, de ponta a ponta. Inscrições por turma. Entre na lista de espera.</p><div class="price">Lista de espera aberta</div><a href="https://exemplo-trocar.com/lista-espera-pat" class="btn btn-ghost btn-sm" style="margin-top:14px">Entrar na lista</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer">
+  <div class="wrap">
+    <div class="note">Aviso: material técnico de apoio à advocacia do reclamante. Não substitui a análise do caso concreto pelo profissional, nem é diagnóstico médico ou parecer pericial. As referências científicas citadas são reais e verificáveis pelos DOI indicados.</div>
+    <div class="contato">Dúvidas antes de comprar? Fale com a equipe: <a href="mailto:contato@folsadvocacia.com">contato@folsadvocacia.com</a></div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>Série Playbook do Reclamante · Volume 01 · Burnout · Edição independente</p>
+    <p style="margin-top:6px">Um material do <span class="sig">Prof. Felipe Scherer</span></p>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="mobile-cta">
+  <div class="mc-price"><b>R$ 19,90</b><br>acesso imediato</div>
+  <a href="https://exemplo-trocar.com/checkout-playbook-burnout" class="btn btn-sm">Quero o Playbook</a>
+</div>
+
+</body>
+</html>
