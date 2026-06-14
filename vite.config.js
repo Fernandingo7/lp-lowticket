@@ -12,6 +12,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         obrigado: resolve(__dirname, 'obrigado/index.html'),
+        playbookBurnout: resolve(__dirname, 'playbook-burnout-lp2/index.html'),
       },
     },
   },
