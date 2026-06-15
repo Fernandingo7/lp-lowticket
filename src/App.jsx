@@ -200,7 +200,7 @@ export default function App() {
       {/* DOCS GRID */}
       <section className="docs-section">
         <div className="container">
-          <h2 className="section-title light docs-section-title">Veja tudo o que você terá acesso ao adquirir o material</h2>
+          <h2 className="section-title light docs-section-title">Veja tudo o que você terá acesso ao adquirir o material:</h2>
           <div className="docs-grid">
             {docs.map((doc, i) => (
               <div key={i} className="doc-card">
@@ -303,7 +303,7 @@ export default function App() {
       <section className="professor-section">
         <div className="professor-inner">
           <div className="professor-text">
-            <p className="professor-label">Conheça o seu autor</p>
+            <p className="professor-label">Conheça o autor</p>
             <p><strong>Felipe Scherer</strong> é advogado especialista em Direito do Trabalho, pós-graduado em Direito e Processo do Trabalho e sócio-proprietário do escritório FOLS Advocacia.</p>
             <p>Com mais de 10 anos de experiência, atuou em mais de 3.000 processos e obteve, com o seu escritório, <strong>mais de R$10 milhões de faturamento.</strong></p>
             <p>Autor do curso "Prática em Acidente de Trabalho 2.0", hoje Felipe também ajuda advogados que desejam ter o conhecimento e a segurança necessários para <strong>aumentar as suas probabilidades de êxito - e, consequentemente, seus honorários - nas ações de Acidente de Trabalho e Doença Ocupacional.</strong></p>
