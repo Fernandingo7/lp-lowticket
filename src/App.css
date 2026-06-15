@@ -357,8 +357,19 @@ body {
   text-align: center;
   color: rgba(255, 255, 255, 0.85);
   max-width: 720px;
-  margin: 0 auto 52px;
+  margin: 0 auto 12px;
   line-height: 1.35;
+}
+
+.pains-subeyebrow {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(17px, 2vw, 22px);
+  font-weight: 400;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.70);
+  max-width: 620px;
+  margin: 0 auto 52px;
+  line-height: 1.45;
 }
 
 .pains-cards-grid {
@@ -481,11 +492,18 @@ body {
 /* ─── DOCS SECTION ─── */
 .docs-section {
   background: linear-gradient(135deg, #5f341a 0%, #2d140a 100%);
-  padding: 96px 0;
+  padding: 96px 0 40px;
 }
 
 .docs-section .section-title {
   font-size: clamp(29px, 4.2vw, 38px);
+}
+
+.docs-section-title {
+  font-family: 'Libre Baskerville', serif !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  margin-bottom: 56px !important;
 }
 
 .docs-grid {
@@ -558,7 +576,7 @@ body {
 /* ─── BONUS SECTION ─── */
 .bonus-section {
   background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
-  padding: 80px 0;
+  padding: 40px 0 80px;
 }
 
 .bonus-kicker {

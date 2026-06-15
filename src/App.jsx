@@ -13,43 +13,43 @@ const docs = [
     img: '/doc-triagem.webp',
     coverTitle: 'CHECKLIST DE TRIAGEM DE CASOS',
     headline: 'Decida em minutos se vale a pena ajuizar a ação.',
-    desc: 'Checklist pronta para identificar casos com alto potencial, evitar ações com baixa viabilidade e reduzir o risco de improcedência antes mesmo da distribuição.',
+    desc: <>Checklist pronta para <strong>identificar casos com alto potencial, evitar ações com baixa viabilidade e reduzir o risco de improcedência</strong> antes mesmo da distribuição.</>,
   },
   {
     img: '/doc-peticao.webp',
     coverTitle: 'MODELO DE PETIÇÃO INICIAL COM 4 BLOCOS PRONTOS PARA COPIAR E COLAR',
-    headline: 'Pare de escrever petições de Burnout do zero.',
-    desc: 'Tenha acesso à estrutura completa de petição inicial que utilizo no meu escritório, acompanhada dos principais blocos argumentativos para copiar, adaptar e utilizar imediatamente nos seus processos.',
+    headline: 'Não comece sua próxima inicial do zero.',
+    desc: <>Tenha acesso à <strong>estrutura completa de petição inicial que utilizo no meu escritório</strong>, acompanhada dos principais <u>blocos argumentativos para copiar, adaptar e utilizar imediatamente nos seus processos</u>.</>,
   },
   {
     img: '/doc-roteiro-audiencia.webp',
     coverTitle: 'ROTEIRO DE AUDIÊNCIA',
     headline: 'Perguntas prontas para extrair prova.',
-    desc: 'Perguntas para reclamante, preposto e testemunhas com foco em demonstrar pressão excessiva, metas abusivas, assédio e adoecimento ocupacional.',
+    desc: <>Perguntas para <strong>reclamante, preposto e testemunhas</strong> com foco em demonstrar pressão excessiva, metas abusivas, assédio e adoecimento ocupacional.</>,
   },
   {
     img: '/doc-quesitos-periciais.webp',
     coverTitle: 'MODELOS DE QUESITOS PERICIAIS',
-    headline: 'Pare de inventar perguntas para o perito.',
+    headline: 'Pare de improvisar perguntas para o perito.',
     desc: 'Quesitos prontos de nexo causal, dano e incapacidade para copiar, adaptar e utilizar imediatamente nas suas ações de Burnout e Doença Ocupacional.',
   },
   {
     img: '/doc-teses.webp',
     coverTitle: 'AS 9 PRINCIPAIS TESES DEFENSIVAS DESMONTADAS',
     headline: 'Saiba exatamente como enfrentar os argumentos mais comuns da defesa e dos peritos.',
-    desc: 'Refutações prontas para alegações como multifatorialidade, fatores pessoais, ausência de CAT, doenças pré-existentes, comorbidades e outras teses frequentemente utilizadas para afastar o nexo causal.',
+    desc: <>Refutações prontas para alegações como <strong>multifatorialidade, fatores pessoais, ausência de CAT, doenças pré-existentes, comorbidades</strong> e outras teses frequentemente utilizadas para afastar o nexo causal.</>,
   },
   {
     img: '/doc-recurso.webp',
     coverTitle: 'RECURSO ORDINÁRIO SIMPLIFICADO',
-    headline: 'Saiba exatamente o que fazer após uma improcedência.',
-    desc: 'Passo a passo para estruturar o recurso e enfrentar os fundamentos mais comuns utilizados para negar o nexo causal.',
+    headline: 'Uma improcedência não precisa ser o fim da ação.',
+    desc: 'Um roteiro objetivo para analisar a sentença, mapear os fundamentos da improcedência e estruturar o RO em pontos como preliminares, nexo causal, ônus da prova, dano, concausa, cálculo da indenização e prescrição.',
   },
   {
     img: '/doc-casos-reais.webp',
     coverTitle: 'ANÁLISE DE 10 CASOS REAIS DE PROCEDÊNCIA',
-    headline: 'Veja o que funcionou na prática.',
-    desc: 'A minha análise sobre 10 decisões favoráveis ao reclamante com destaque para as provas, estratégias e argumentos que levaram ao reconhecimento do Burnout como doença ocupacional.',
+    headline: 'Veja como o Burnout foi reconhecido em 10 processos reais.',
+    desc: <>A minha análise sobre 10 decisões favoráveis ao reclamante, destacando as <strong>provas produzidas</strong>, os <strong>fundamentos utilizados</strong> e os <strong>elementos que levaram ao reconhecimento do Burnout como doença ocupacional.</strong></>,
   },
 ]
 
@@ -103,9 +103,9 @@ function CountdownTimer() {
   )
 }
 
-function BuyButton() {
+function BuyButton({ href = '#oferta' }) {
   return (
-    <a href="#oferta" className="buy-btn">
+    <a href={href} className="buy-btn">
       <span>QUERO COMPRAR AGORA <br />COM DESCONTO!</span>
       <ArrowUpRight className="buy-btn-arrow-icon" />
     </a>
@@ -149,7 +149,8 @@ export default function App() {
       {/* PAINS */}
       <section className="pains-section">
         <div className="container">
-          <p className="pains-eyebrow">A maioria das ações de burnout são perdidas por falta de técnica.</p>
+          <p className="pains-eyebrow">Você não está perdendo ações de Burnout para o perito…</p>
+          <p className="pains-subeyebrow">Está perdendo para <strong>erros técnicos que nem sabe que está cometendo.</strong></p>
           <div className="pains-cards-grid">
             <div className="contrast-card contrast-card--red">
               <div className="contrast-card__accent-line contrast-card__accent-line--red" />
@@ -178,6 +179,7 @@ export default function App() {
                   'Provando o nexo causal com fundamentação técnico-científica irrefutável',
                   'Formulando quesitos cirúrgicos que direcionam a conclusão pericial',
                   'Maximizando condenações com materiais estratégicos já validados',
+                  'E enfrentando laudos desfavoráveis com teses técnicas previamente estruturadas.',
                 ].map((item, i) => (
                   <li key={i} className="contrast-card__item">
                     <span className="contrast-card__dot contrast-card__dot--green" />
@@ -198,7 +200,7 @@ export default function App() {
       {/* DOCS GRID */}
       <section className="docs-section">
         <div className="container">
-          <h2 className="section-title light">VEJA TUDO O QUE VOCÊ TERÁ ACESSO NO KIT COMPLETO:</h2>
+          <h2 className="section-title light docs-section-title">Veja tudo o que você terá acesso ao adquirir o material</h2>
           <div className="docs-grid">
             {docs.map((doc, i) => (
               <div key={i} className="doc-card">
@@ -268,7 +270,7 @@ export default function App() {
           <div className="offer-from">DE: <span className="price-striked-red">R$199,90</span></div>
           <div className="offer-from">POR</div>
           <div className="offer-price">R$19,90</div>
-          <BuyButton />
+          <BuyButton href="https://pay.kiwify.com.br/s3e7UO3?src=lp-1" />
           <PaymentBadge />
         </div>
       </section>
@@ -301,7 +303,7 @@ export default function App() {
       <section className="professor-section">
         <div className="professor-inner">
           <div className="professor-text">
-            <p className="professor-label">Conheça o seu professor</p>
+            <p className="professor-label">Conheça o seu autor</p>
             <p><strong>Felipe Scherer</strong> é advogado especialista em Direito do Trabalho, pós-graduado em Direito e Processo do Trabalho e sócio-proprietário do escritório FOLS Advocacia.</p>
             <p>Com mais de 10 anos de experiência, atuou em mais de 3.000 processos e obteve, com o seu escritório, <strong>mais de R$10 milhões de faturamento.</strong></p>
             <p>Autor do curso "Prática em Acidente de Trabalho 2.0", hoje Felipe também ajuda advogados que desejam ter o conhecimento e a segurança necessários para <strong>aumentar as suas probabilidades de êxito - e, consequentemente, seus honorários - nas ações de Acidente de Trabalho e Doença Ocupacional.</strong></p>
