@@ -317,5 +317,17 @@ src="https://www.facebook.com/tr?id=149885701370932&ev=PageView&noscript=1"
   }
   requestAnimationFrame(tick);
 </script>
+<script>
+function passarUTMs() {
+  const params = new URLSearchParams(window.location.search);
+  const utms = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','sck','src'];
+  document.querySelectorAll('a[href*="pay.kiwify.com.br"]').forEach(link => {
+    const url = new URL(link.href);
+    utms.forEach(p => { if (params.get(p)) url.searchParams.set(p, params.get(p)); });
+    link.href = url.toString();
+  });
+}
+window.addEventListener('DOMContentLoaded', passarUTMs);
+</script>
 </body>
 </html>
