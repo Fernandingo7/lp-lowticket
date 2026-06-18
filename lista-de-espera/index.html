@@ -397,12 +397,13 @@
       tema: document.getElementById('tema').value,
     };
 
-    // TODO: substitua pela URL do seu endpoint (ex: Make, n8n, Sheets, ActiveCampaign)
-    const ENDPOINT = 'SEU_ENDPOINT_AQUI';
+    // Cole aqui a URL gerada ao publicar o Apps Script como Web App
+    const ENDPOINT = 'https://script.google.com/macros/s/AKfycbzU2YOArRTiDfL5ktSKobX3DQXVRkF5IB27awr63DB9r3m3DWq4byvw4A_Dw5Y2m_qlDA/exec';
 
     try {
       await fetch(ENDPOINT, {
         method: 'POST',
+        mode: 'no-cors', // necessário para Google Apps Script
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
