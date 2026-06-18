@@ -13,6 +13,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         obrigado: resolve(__dirname, 'obrigado/index.html'),
         playbookBurnout: resolve(__dirname, 'playbook-burnout-lp2/index.html'),
+        listaDeEspera: resolve(__dirname, 'lista-de-espera/index.html'),
       },
     },
   },
