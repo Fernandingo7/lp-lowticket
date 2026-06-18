@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista de Espera — Série Playbook do Reclamante</title>
+<meta name="description" content="Entre na lista de espera e seja o primeiro a saber quando o próximo volume do Playbook do Reclamante for lançado.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:wght@400;600;700;800;900&display=swap">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0f0f0f;
+    --bg-card: #1a1a1a;
+    --gold: #c9895e;
+    --gold-light: #f1c257;
+    --white: #ffffff;
+    --text-muted: rgba(255,255,255,0.70);
+    --border: rgba(255,255,255,0.08);
+    --input-bg: rgba(255,255,255,0.05);
+    --input-border: rgba(201,137,94,0.3);
+    --green: #39d353;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--bg);
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('/bg-desktop.png');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    color: var(--white);
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+
+  /* HEADER */
+  .header {
+    padding: 20px 24px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header img { height: 36px; }
+
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 64px 24px 48px;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .kicker {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: clamp(28px, 5vw, 44px);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--white);
+    margin-bottom: 20px;
+  }
+
+  .hero h1 span {
+    background: linear-gradient(90deg, #c9895e, #f1c257);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero p {
+    font-size: clamp(15px, 2.5vw, 18px);
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  /* VOLUMES */
+  .volumes-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px 48px;
+    text-align: center;
+  }
+
+  .volumes-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+  }
+
+  .volumes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .vol-chip {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-muted);
+    cursor: default;
+  }
+
+  .vol-chip.current {
+    background: rgba(201,137,94,0.15);
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  /* FORM CARD */
+  .form-wrap {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  .form-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 40px 36px;
+  }
+
+  .form-title {
+    font-family: 'Libre Baskerville', serif;
+    font-size: clamp(20px, 3vw, 26px);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
+    color: var(--white);
+  }
+
+  .form-sub {
+    font-size: 14px;
+    color: var(--text-muted);
+    text-align: center;
+    margin-bottom: 32px;
+    line-height: 1.5;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .field label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+  }
+
+  .field input,
+  .field select {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+    -webkit-appearance: none;
+  }
+
+  .field select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c9895e' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+    cursor: pointer;
+  }
+
+  .field select option {
+    background: #1a1a1a;
+    color: var(--white);
+  }
+
+  .field input::placeholder { color: rgba(255,255,255,0.25); }
+
+  .field input:focus,
+  .field select:focus {
+    border-color: var(--gold);
+  }
+
+  .submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background: linear-gradient(90deg, #c9895e 0%, #f1c257 100%);
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    padding: 18px 24px;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: filter 0.2s, transform 0.15s;
+  }
+
+  .submit-btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+  }
+
+  .submit-btn:active { transform: translateY(0); }
+
+  .privacy {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    margin-top: 14px;
+    line-height: 1.5;
+  }
+
+  /* SUCCESS */
+  .success-msg {
+    display: none;
+    text-align: center;
+    padding: 32px 0 0;
+  }
+
+  .success-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .success-msg h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 22px;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+
+  .success-msg p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* DIVIDER */
+  .divider {
+    width: 48px;
+    height: 3px;
+    border-radius: 99px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    margin: 0 auto 40px;
+  }
+
+  @media (max-width: 480px) {
+    .form-card { padding: 28px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <img src="/logo.svg" alt="Playbook do Reclamante" onerror="this.style.display='none'" />
+</header>
+
+<section class="hero">
+  <p class="kicker">Série Playbook do Reclamante</p>
+  <h1>Entre na lista de espera do <span>próximo volume.</span></h1>
+  <p>Novos volumes estão sendo preparados. Cadastre-se e seja avisado em primeira mão quando o tema que você quer for lançado.</p>
+</section>
+
+<div class="divider"></div>
+
+<div class="volumes-section">
+  <p class="volumes-label">Volumes da série</p>
+  <div class="volumes-grid">
+    <span class="vol-chip current">Vol. 01 — Burnout ✓</span>
+    <span class="vol-chip">Vol. 02 — Hérnia de Disco</span>
+    <span class="vol-chip">Vol. 03 — LER / DORT</span>
+    <span class="vol-chip">Vol. 04 — Túnel do Carpo</span>
+    <span class="vol-chip">Vol. 05 — Lesões de Ombro</span>
+    <span class="vol-chip">Vol. 06 — Epicondilite</span>
+    <span class="vol-chip">Vol. 07 — Lombalgia</span>
+    <span class="vol-chip">Vol. 08 — PAIR</span>
+    <span class="vol-chip">Vol. 09 — Depressão</span>
+    <span class="vol-chip">Vol. 10 — Ansiedade</span>
+  </div>
+</div>
+
+<div class="form-wrap">
+  <div class="form-card">
+    <h2 class="form-title">Garanta seu lugar na fila</h2>
+    <p class="form-sub">Preencha os dados abaixo e escolha o tema que mais interessa para você.</p>
+
+    <form id="waitlistForm">
+      <div class="field">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name" />
+      </div>
+
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com.br" required autocomplete="email" />
+      </div>
+
+      <div class="field">
+        <label for="telefone">WhatsApp</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(51) 99999-9999" required autocomplete="tel" />
+      </div>
+
+      <div class="field">
+        <label for="tema">Qual volume você quer?</label>
+        <select id="tema" name="tema" required>
+          <option value="" disabled selected>Escolha o tema...</option>
+          <option value="hernia-de-disco">Vol. 02 — Hérnia de Disco</option>
+          <option value="ler-dort">Vol. 03 — LER / DORT</option>
+          <option value="tunel-do-carpo">Vol. 04 — Túnel do Carpo</option>
+          <option value="lesoes-de-ombro">Vol. 05 — Lesões de Ombro</option>
+          <option value="epicondilite">Vol. 06 — Epicondilite</option>
+          <option value="lombalgia">Vol. 07 — Lombalgia</option>
+          <option value="pair">Vol. 08 — PAIR</option>
+          <option value="depressao">Vol. 09 — Depressão</option>
+          <option value="ansiedade">Vol. 10 — Ansiedade</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        Entrar na lista de espera →
+      </button>
+
+      <p class="privacy">Seus dados estão seguros. Sem spam.</p>
+    </form>
+
+    <div class="success-msg" id="successMsg">
+      <div class="success-icon">✓</div>
+      <h3>Você está na lista!</h3>
+      <p>Assim que o volume escolhido for lançado, você será o primeiro a saber.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('waitlistForm');
+  const successMsg = document.getElementById('successMsg');
+
+  // Máscara de telefone
+  document.getElementById('telefone').addEventListener('input', function(e) {
+    let v = e.target.value.replace(/\D/g, '').slice(0, 11);
+    if (v.length > 6) v = '(' + v.slice(0,2) + ') ' + v.slice(2,7) + '-' + v.slice(7);
+    else if (v.length > 2) v = '(' + v.slice(0,2) + ') ' + v.slice(2);
+    else if (v.length > 0) v = '(' + v;
+    e.target.value = v;
+  });
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = form.querySelector('.submit-btn');
+    btn.textContent = 'Enviando...';
+    btn.disabled = true;
+
+    const data = {
+      nome: document.getElementById('nome').value,
+      email: document.getElementById('email').value,
+      telefone: document.getElementById('telefone').value,
+      tema: document.getElementById('tema').value,
+    };
+
+    // TODO: substitua pela URL do seu endpoint (ex: Make, n8n, Sheets, ActiveCampaign)
+    const ENDPOINT = 'SEU_ENDPOINT_AQUI';
+
+    try {
+      await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+    } catch (_) {}
+
+    form.style.display = 'none';
+    successMsg.style.display = 'block';
+  });
+</script>
+
+</body>
+</html>

@@ -4,6 +4,7 @@
   "rewrites": [
     { "source": "/obrigado", "destination": "/obrigado/index.html" },
     { "source": "/playbook-burnout-lp2", "destination": "/playbook-burnout-lp2/index.html" },
-    { "source": "/((?!obrigado|playbook-burnout-lp2|assets).*)", "destination": "/index.html" }
+    { "source": "/lista-de-espera", "destination": "/lista-de-espera/index.html" },
+    { "source": "/((?!obrigado|playbook-burnout-lp2|lista-de-espera|assets).*)", "destination": "/index.html" }
   ]
 }
