@@ -16,6 +16,7 @@ export default defineConfig({
         listaDeEspera: resolve(__dirname, 'lista-de-espera/index.html'),
         vass: resolve(__dirname, 'vass/index.html'),
         vtic: resolve(__dirname, 'vtic/index.html'),
+        vhubl: resolve(__dirname, 'vhubl/index.html'),
       },
     },
   },
