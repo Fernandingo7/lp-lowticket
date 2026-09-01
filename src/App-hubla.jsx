@@ -103,9 +103,20 @@ function CountdownTimer() {
   )
 }
 
+function useCheckoutUrl(baseUrl) {
+  const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content']
+  const pageParams = new URLSearchParams(window.location.search)
+  const hasUtms = utmKeys.some(k => pageParams.has(k))
+  if (!hasUtms || !baseUrl.startsWith('http')) return baseUrl
+  const url = new URL(baseUrl)
+  utmKeys.forEach(k => { if (pageParams.has(k)) url.searchParams.set(k, pageParams.get(k)) })
+  return url.toString()
+}
+
 function BuyButton({ href = '#oferta' }) {
+  const checkoutUrl = useCheckoutUrl(href)
   return (
-    <a href={href} className="buy-btn">
+    <a href={checkoutUrl} className="buy-btn">
       <span>QUERO COMPRAR AGORA <br />COM DESCONTO!</span>
       <ArrowUpRight className="buy-btn-arrow-icon" />
     </a>
