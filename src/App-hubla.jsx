@@ -104,7 +104,7 @@ function CountdownTimer() {
 }
 
 function useCheckoutUrl(baseUrl) {
-  const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content']
+  const utmKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'fbclid', 'sck', 'src']
   const pageParams = new URLSearchParams(window.location.search)
   const hasUtms = utmKeys.some(k => pageParams.has(k))
   if (!hasUtms || !baseUrl.startsWith('http')) return baseUrl
