@@ -138,7 +138,7 @@ export default function App() {
           <p className="hero-sub">Tenha acesso imediato a fundamentos técnicos, quesitos, roteiro de perguntas, checklist estratégico e referências científicas aplicáveis na prática.</p>
           <div className="price-row">
             <div className="price-from">DE: <span className="price-striked">R$ 199,00</span></div>
-            <div className="price-main">POR: <span className="price-green">R$ 19,90</span></div>
+            <div className="price-main">POR: <span className="price-green">R$ 29,90</span></div>
           </div>
           <BuyButton />
           <PaymentBadge />
@@ -269,7 +269,7 @@ export default function App() {
           <hr className="offer-divider" />
           <div className="offer-from">DE: <span className="price-striked-red">R$199,90</span></div>
           <div className="offer-from">POR</div>
-          <div className="offer-price">R$19,90</div>
+          <div className="offer-price">R$29,90</div>
           <BuyButton href="https://pay.hub.la/c40Tx2rX58IP7HV0mHVU" />
           <PaymentBadge />
         </div>
