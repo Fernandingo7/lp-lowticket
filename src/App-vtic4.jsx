@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App-vtic4.css'
 import { FileText, Mic, BookOpen, Layers, ArrowUpRight, ShieldCheck, ChevronDown } from 'lucide-react'
+import { Analytics } from '@vercel/analytics/react'
 
 const BASE_URL = 'https://site.incorporacaoimobiliaria.eng.br/wp-content/uploads/2026/04'
 const LOGO_URL = '/logo.svg'
@@ -419,6 +420,7 @@ export default function App() {
           </div>
         </div>
       </section>
+      <Analytics />
 
     </div>
   )

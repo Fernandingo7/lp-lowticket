@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App-vtic5.css'
 import { CheckCircle, ArrowUpRight, Shield, Zap, Mail, HelpCircle, ListChecks, FileSignature } from 'lucide-react'
+import { Analytics } from '@vercel/analytics/react'
 
 const LOGO_URL = '/logo-preta.svg'
 const CHECKOUT_URL = 'https://checkout.ticto.app/O60E6C790'
@@ -359,6 +360,7 @@ export default function App() {
           </div>
         </div>
       </section>
+      <Analytics />
 
     </div>
   )
