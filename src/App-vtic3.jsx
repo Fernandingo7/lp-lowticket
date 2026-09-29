@@ -1,4 +1,5 @@
 import './App-vtic3.css'
+import { Analytics } from '@vercel/analytics/react'
 
 const BASE_URL = 'https://site.incorporacaoimobiliaria.eng.br/wp-content/uploads/2026/04'
 const PAYMENT_ICONS = `${BASE_URL}/Vector.svg`
@@ -33,6 +34,7 @@ export default function App() {
 
         <img src="/hero.webp" alt="Playbook do Reclamante" className="hero-mockup" />
       </section>
+      <Analytics />
 
     </div>
   )
