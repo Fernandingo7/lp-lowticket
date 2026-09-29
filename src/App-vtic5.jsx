@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App-vtic5.css'
-import { CheckCircle, ArrowUpRight, Shield, Zap, Mail, HelpCircle, ListChecks, FileSignature } from 'lucide-react'
+import { CheckCircle, ArrowUpRight, Shield, Zap, FileSearch, ClipboardList, Gavel } from 'lucide-react'
 
 const LOGO_URL = '/logo-preta.svg'
 const CHECKOUT_URL = 'https://checkout.ticto.app/O60E6C790'
@@ -8,37 +8,37 @@ const HERO_BG = '/bg-desktop.png'
 
 const materiais = [
   {
-    img: '/doc-triagem.webp',
+    img: '/2c-checklist-de-triagem.png',
     titulo: 'CHECKLIST DE TRIAGEM DE CASOS',
     desc: 'Checklist pronta para identificar casos com alto potencial, evitar ações com baixa viabilidade e reduzir o risco de improcedência antes mesmo da distribuição.',
   },
   {
-    img: '/doc-peticao.webp',
+    img: '/2d-modelo-de-peticao.png',
     titulo: 'MODELO DE PETIÇÃO INICIAL COM 4 BLOCOS PRONTOS PARA COPIAR E COLAR',
     desc: 'A estrutura completa de petição inicial com os principais blocos argumentativos para copiar, adaptar e utilizar imediatamente nos seus processos.',
   },
   {
-    img: '/doc-roteiro-audiencia.webp',
+    img: '/2b-roteiro-de-audiencia.png',
     titulo: 'ROTEIRO DE AUDIÊNCIA',
     desc: 'Perguntas para reclamante, preposto e testemunhas com foco em demonstrar pressão excessiva, metas abusivas, assédio e adoecimento ocupacional.',
   },
   {
-    img: '/doc-quesitos-periciais.webp',
+    img: '/2a-modelos-de-quesitos-periciais.png',
     titulo: 'MODELOS DE QUESITOS PERICIAIS',
     desc: 'Quesitos prontos de nexo causal, dano e incapacidade para copiar, adaptar e utilizar imediatamente nas suas ações de Burnout e Doença Ocupacional.',
   },
   {
-    img: '/doc-teses.webp',
+    img: '/2e-teses-defensivas.png',
     titulo: 'AS 9 PRINCIPAIS TESES DEFENSIVAS DESMONTADAS',
     desc: 'Refutações prontas para multifatorialidade, fatores pessoais, ausência de CAT, doenças pré-existentes e outras teses utilizadas para afastar o nexo causal.',
   },
   {
-    img: '/doc-recurso.webp',
+    img: '/2f-recurso-ordinario.png',
     titulo: 'RECURSO ORDINÁRIO SIMPLIFICADO',
     desc: 'Um roteiro objetivo para analisar a sentença, mapear os fundamentos da improcedência e estruturar o RO em pontos como nexo causal, ônus da prova, dano e prescrição.',
   },
   {
-    img: '/doc-casos-reais.webp',
+    img: '/2g-analise-de-casos.png',
     titulo: 'ANÁLISE DE 10 CASOS REAIS DE PROCEDÊNCIA',
     desc: 'Análise de 10 decisões favoráveis ao reclamante, destacando as provas produzidas, os fundamentos utilizados e os elementos que levaram ao reconhecimento do Burnout.',
   },
@@ -263,17 +263,17 @@ export default function App() {
           <div className="uso-cards">
             {[
               {
-                icon: <HelpCircle size={36} stroke="url(#brown-grad)" strokeWidth={1.8} />,
+                icon: <FileSearch size={36} stroke="url(#brown-grad)" strokeWidth={1.8} />,
                 pergunta: 'Ficou em dúvida se o caso tem viabilidade?',
                 acao: 'Abra o checklist de triagem.',
               },
               {
-                icon: <ListChecks size={36} stroke="url(#brown-grad)" strokeWidth={1.8} />,
+                icon: <ClipboardList size={36} stroke="url(#brown-grad)" strokeWidth={1.8} />,
                 pergunta: 'Precisa formular quesitos para o perito?',
                 acao: 'Use o modelo pronto, adapte ao caso e protocole.',
               },
               {
-                icon: <FileSignature size={36} stroke="url(#brown-grad)" strokeWidth={1.8} />,
+                icon: <Gavel size={36} stroke="url(#brown-grad)" strokeWidth={1.8} />,
                 pergunta: 'Vai para a audiência ou precisa recorrer?',
                 acao: 'Consulte o roteiro de perguntas ou o modelo de RO.',
               },
