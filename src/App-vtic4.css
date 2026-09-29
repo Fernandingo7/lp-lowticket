@@ -344,9 +344,63 @@ body {
   white-space: nowrap;
 }
 
+/* ─── PRICE BLOCK (hero) ─── */
+.price-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.price-line1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.price-striked {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.price-big {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(52px, 7vw, 72px);
+  font-weight: 700;
+  color: var(--accent-blue);
+  line-height: 1;
+}
+
+/* ─── GUARANTEE BADGE ─── */
+.guarantee-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(57, 211, 83, 0.08);
+  border: 1px solid rgba(57, 211, 83, 0.25);
+  border-radius: 10px;
+  padding: 10px 16px;
+  width: 100%;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.4;
+  text-align: left;
+}
+
+.guarantee-badge strong {
+  color: var(--accent-green);
+}
+
+.guarantee-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: var(--accent-green);
+  stroke-width: 1.8;
+}
+
 /* ─── PAINS SECTION ─── */
 .pains-section {
-  background: #0d0d0d;
+  background: linear-gradient(180deg, #1a0a04 0%, #0e0603 100%);
   padding: 80px 0;
 }
 
@@ -573,9 +627,118 @@ body {
   margin: 0;
 }
 
+/* ─── CONTRAST CARD FOOTER ─── */
+.contrast-card__footer {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  font-style: italic;
+}
+
+/* ─── DOCS CTA ─── */
+.docs-cta {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ─── DOC VALUE TAG ─── */
+.doc-value {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-blue);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ─── DOCS TITLE SUB ─── */
+.docs-title-sub {
+  font-size: clamp(22px, 3vw, 30px);
+  color: var(--accent-blue);
+}
+
+/* ─── TESTIMONIALS SECTION ─── */
+.testimonials-section {
+  background: linear-gradient(180deg, #1a0a04 0%, #0e0603 100%);
+  padding: 80px 0;
+}
+
+.testimonials-kicker {
+  color: #c9a962;
+  font-size: clamp(14px, 1.6vw, 17px);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.testimonials-title {
+  margin-bottom: 48px !important;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 28px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonial-text {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.65;
+  font-style: italic;
+  flex: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 16px;
+}
+
+.testimonial-name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.testimonial-role {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* ─── BONUS VALUE TAG ─── */
+.bonus-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-blue);
+  margin-top: -12px;
+  margin-bottom: 8px;
+}
+
 /* ─── BONUS SECTION ─── */
 .bonus-section {
-  background: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
+  background: linear-gradient(180deg, #1c0d05 0%, #0e0603 100%);
   padding: 40px 0 80px;
 }
 
@@ -978,6 +1141,99 @@ body {
   text-decoration: underline;
 }
 
+/* ─── CHECK CIRCLE (green) ─── */
+.check-circle {
+  background: var(--accent-green) !important;
+  color: #000 !important;
+}
+
+/* ─── OFFER BOX GUARANTEE ─── */
+.offer-box .guarantee-badge {
+  text-align: left;
+}
+
+/* ─── FAQ SECTION ─── */
+.faq-section {
+  background: linear-gradient(135deg, #5f341a 0%, #2d140a 100%);
+  padding: 80px 0;
+}
+
+.faq-title {
+  margin-bottom: 40px !important;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.faq-item--open {
+  border-color: rgba(201, 137, 94, 0.4);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.faq-chevron {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: var(--accent-blue);
+  transition: transform 0.25s;
+}
+
+.faq-item--open .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 24px 22px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.80);
+  line-height: 1.65;
+}
+
+.faq-cta {
+  margin-top: 56px;
+  max-width: 800px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.faq-cta .buy-btn {
+  width: 100%;
+  max-width: 500px;
+}
+
 /* ─── RESPONSIVE ─── */
 @media (max-width: 900px) {
   .top-timer-text {
@@ -1133,6 +1389,17 @@ body {
 
   .pains-eyebrow {
     margin-bottom: 36px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .price-block {
+    align-items: center;
+    text-align: center;
   }
 }
 
