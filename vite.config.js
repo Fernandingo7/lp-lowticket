@@ -19,6 +19,7 @@ export default defineConfig({
         vtic2: resolve(__dirname, 'vtic2/index.html'),
         vtic3: resolve(__dirname, 'vtic3/index.html'),
         vtic4: resolve(__dirname, 'vtic4/index.html'),
+        vtic5: resolve(__dirname, 'vtic5/index.html'),
         vhubl: resolve(__dirname, 'vhubl/index.html'),
       },
     },
