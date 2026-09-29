@@ -3,7 +3,7 @@ import './App-vtic2.css'
 import { FileText, Mic, BookOpen, Layers, ArrowUpRight, ShieldCheck } from 'lucide-react'
 
 const BASE_URL = 'https://site.incorporacaoimobiliaria.eng.br/wp-content/uploads/2026/04'
-const LOGO_URL = '/logo.svg'
+const LOGO_URL = '/logo-preta.svg'
 const HERO_BG = '/bg-desktop.png'
 const PAYMENT_ICONS = `${BASE_URL}/Vector.svg`
 
@@ -105,13 +105,13 @@ export default function App() {
       </div>
 
       {/* HERO */}
-      <section className="hero-section" style={{ backgroundImage: `url(${HERO_BG})` }}>
+      <section className="hero-section">
         <div className="hero-content">
           <img src={LOGO_URL} alt="" className="hero-logo" onError={e => e.target.style.display = 'none'} />
           <h1 className="hero-headline">
-            Um material <span className="hero-highlight">imediatamente aplicável</span> para advogados que desejam <span className="hero-highlight">estruturar ações de síndrome de burnout com mais segurança, técnica e assertividade.</span>
+            Nunca mais comece uma ação de Síndrome de Burnout do zero.
           </h1>
-          <p className="hero-sub">Tenha acesso imediato a fundamentos técnicos, quesitos, roteiro de perguntas, checklist estratégico e referências científicas aplicáveis na prática.</p>
+          <p className="hero-sub">Tenha acesso a fundamentos técnicos, quesitos, roteiro de perguntas, checklist e referências científicas prontos para modelar e aplicar.</p>
           <div className="price-block">
             <p className="price-line1">De <span className="price-striked">R$ 199,00</span> Por apenas</p>
             <p className="price-big">R$ 19,90</p>
@@ -120,57 +120,6 @@ export default function App() {
           <PaymentBadge />
         </div>
         <img src="/hero.webp" alt="" className="hero-overlay-image" aria-hidden="true" />
-      </section>
-
-      {/* PAINS */}
-      <section className="pains-section">
-        <div className="container">
-          <p className="pains-eyebrow">Você não está perdendo ações de Burnout para o perito…</p>
-          <p className="pains-subeyebrow">Está perdendo para <strong>erros técnicos que nem sabe que está cometendo.</strong></p>
-          <div className="pains-cards-grid">
-            <div className="contrast-card contrast-card--red">
-              <div className="contrast-card__accent-line contrast-card__accent-line--red" />
-              <h3 className="contrast-card__title">Enquanto você está:</h3>
-              <ul className="contrast-card__list">
-                {[
-                  'Aceitando casos de burnout sem saber provar o nexo causal',
-                  'Usando quesitos genéricos que o perito simplesmente ignora',
-                  'Perdendo ações e honorários por falta de fundamento técnico',
-                ].map((item, i) => (
-                  <li key={i} className="contrast-card__item">
-                    <span className="contrast-card__dot contrast-card__dot--red" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="contrast-card contrast-card--green">
-              <div className="contrast-card__accent-line contrast-card__accent-line--green" />
-              <h3 className="contrast-card__title">
-                Os advogados que <span className="contrast-card__highlight">ganham</span> estão:
-              </h3>
-              <ul className="contrast-card__list">
-                {[
-                  'Provando o nexo causal com fundamentação técnico-científica irrefutável',
-                  'Formulando quesitos cirúrgicos que direcionam a conclusão pericial',
-                  'Maximizando condenações com materiais estratégicos já validados',
-                  'E enfrentando laudos desfavoráveis com teses técnicas previamente estruturadas.',
-                ].map((item, i) => (
-                  <li key={i} className="contrast-card__item">
-                    <span className="contrast-card__dot contrast-card__dot--green" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <p className="pains-footer-text">
-            Cada caso perdido é um honorário que ficou na mesa.{' '}
-            <span className="pains-footer-highlight">E isso tem solução.</span>
-          </p>
-        </div>
       </section>
 
       {/* DOCS GRID */}
@@ -186,25 +135,6 @@ export default function App() {
                 <div className="doc-info">
                   <p className="doc-headline">{doc.headline}</p>
                   <p className="doc-desc">{doc.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIALS */}
-      <section className="testimonials-section">
-        <div className="container">
-          <p className="testimonials-kicker">O QUE DIZEM OS ADVOGADOS</p>
-          <h2 className="section-title light testimonials-title">Resultados de quem já usou o material</h2>
-          <div className="testimonials-grid">
-            {testimonials.map((t, i) => (
-              <div key={i} className="testimonial-card">
-                <p className="testimonial-text">"{t.text}"</p>
-                <div className="testimonial-author">
-                  <span className="testimonial-name">{t.name}</span>
-                  <span className="testimonial-role">{t.role}</span>
                 </div>
               </div>
             ))}

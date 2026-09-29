@@ -87,9 +87,7 @@ body {
 
 /* ─── HERO ─── */
 .hero-section {
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
+  background: #ffffff;
   min-height: 100vh;
   display: flex;
   align-items: flex-start;
@@ -99,17 +97,7 @@ body {
 }
 
 .hero-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(90deg,
-      rgba(0, 0, 0, 0.92) 0%,
-      rgba(0, 0, 0, 0.78) 20%,
-      rgba(0, 0, 0, 0.45) 40%,
-      rgba(0, 0, 0, 0.12) 65%,
-      rgba(0, 0, 0, 0.03) 85%,
-      rgba(0, 0, 0, 0) 100%);
-  z-index: 0;
+  display: none;
 }
 
 .hero-content {
@@ -125,6 +113,16 @@ body {
 .hero-content .payment-badge {
   justify-content: flex-start;
   margin-inline: 0;
+}
+
+.hero-section .payment-icons {
+  filter: brightness(0) opacity(0.6);
+}
+
+.hero-section .guarantee-badge {
+  background: rgba(57, 211, 83, 0.10);
+  border-color: rgba(57, 211, 83, 0.35);
+  color: #1a0a04;
 }
 
 .hero-overlay-image {
@@ -195,10 +193,10 @@ body {
 
 .hero-headline {
   font-family: 'Libre Baskerville', serif;
-  font-size: clamp(24px, 3vw, 28px);
+  font-size: clamp(24px, 3vw, 34px);
   font-weight: 700;
   line-height: 1.25;
-  color: var(--white);
+  color: #1a0a04;
   max-width: 90%;
 }
 
@@ -207,8 +205,8 @@ body {
 }
 
 .hero-sub {
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.85);
+  font-size: clamp(17px, 1.8vw, 21px);
+  color: #3a1f0d;
   line-height: 1.6;
 }
 
@@ -221,12 +219,12 @@ body {
 .price-line1 {
   font-size: 22px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(26, 10, 4, 0.85);
 }
 
 .price-striked {
   text-decoration: line-through;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(26, 10, 4, 0.45);
 }
 
 .price-big {
@@ -1281,12 +1279,6 @@ body {
   }
 
   .hero-section {
-    background-image: url('/bg-mobile.png') !important;
-    background-size: cover;
-    background-position: center top;
-  }
-
-  .hero-section {
     min-height: auto;
     padding: 2vw 5vw 40px;
     overflow: hidden;
@@ -1302,11 +1294,13 @@ body {
   .hero-headline {
     max-width: 100%;
     font-size: 22px;
+    color: #1a0a04;
   }
 
   .hero-sub {
     max-width: 100%;
-    font-size: 14px;
+    font-size: 16px;
+    color: #3a1f0d;
   }
 
   .price-line1 {
