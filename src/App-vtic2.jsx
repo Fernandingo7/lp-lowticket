@@ -101,7 +101,7 @@ export default function App() {
   return (
     <div className="page" id="topo">
       <div className="top-timer-bar">
-        <p className="top-timer-text">ESTA OFERTA VAI SE ENCERRAR A QUALQUER MOMENTO</p>
+        <p className="top-timer-text">Essa oferta promocional vai sair do ar nos próximos dias!!!</p>
       </div>
 
       {/* HERO */}
