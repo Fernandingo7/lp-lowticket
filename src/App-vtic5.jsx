@@ -117,8 +117,7 @@ export default function App() {
 
       {/* TIMER BAR */}
       <div className="top-timer-bar">
-        <p className="top-timer-text">Oferta de lançamento — preço sobe em breve!</p>
-        <CountdownTimer />
+        <p className="top-timer-text">Essa oferta promocional vai sair do ar nos próximos dias!!!</p>
       </div>
 
       {/* ── HERO ── */}
@@ -255,7 +254,7 @@ export default function App() {
           <svg width="0" height="0" style={{ position: 'absolute' }}>
             <defs>
               <linearGradient id="brown-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#7a3a18" />
+                <stop offset="0%" stopColor="#e8b48a" />
                 <stop offset="100%" stopColor="#c9895e" />
               </linearGradient>
             </defs>
