@@ -4,6 +4,7 @@ import { CheckCircle, ArrowUpRight, Shield, Zap, Mail, HelpCircle, ListChecks, F
 
 const LOGO_URL = '/logo-preta.svg'
 const CHECKOUT_URL = 'https://checkout.ticto.app/O60E6C790'
+const HERO_BG = '/bg-desktop.png'
 
 const materiais = [
   {
@@ -121,7 +122,7 @@ export default function App() {
       </div>
 
       {/* ── HERO ── */}
-      <section className="hero-section">
+      <section className="hero-section" style={{ backgroundImage: `url(${HERO_BG})` }}>
         <div className="hero-grid">
           <div className="hero-content">
             <img src={LOGO_URL} alt="Playbook do Reclamante" className="hero-logo"

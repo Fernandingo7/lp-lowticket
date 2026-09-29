@@ -119,7 +119,9 @@ body {
 
 /* ─── HERO ─── */
 .hero-section {
-  background: linear-gradient(160deg, #fafafa 0%, #ffffff 100%);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
   min-height: 92vh;
   display: flex;
   align-items: center;
@@ -132,8 +134,14 @@ body {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 80% 40%, rgba(122, 58, 24, 0.06) 0%, transparent 60%);
+  background: linear-gradient(90deg,
+    rgba(20, 8, 2, 0.92) 0%,
+    rgba(20, 8, 2, 0.80) 30%,
+    rgba(20, 8, 2, 0.45) 55%,
+    rgba(20, 8, 2, 0.10) 80%,
+    rgba(20, 8, 2, 0.00) 100%);
   pointer-events: none;
+  z-index: 0;
 }
 
 .hero-grid {
@@ -153,12 +161,16 @@ body {
   flex-direction: column;
   gap: 24px;
   align-items: flex-start;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-image-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-mockup {
@@ -186,17 +198,17 @@ body {
   font-size: clamp(26px, 3.2vw, 36px);
   font-weight: 700;
   line-height: 1.25;
-  color: var(--text-dark);
+  color: #ffffff;
   max-width: 90%;
 }
 
 .hero-highlight {
-  color: var(--accent);
+  color: var(--accent-light);
 }
 
 .hero-sub {
   font-size: 17px;
-  color: var(--text-body);
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.65;
   max-width: 560px;
 }
@@ -210,28 +222,28 @@ body {
 }
 
 .price-from {
-  background: rgba(122, 58, 24, 0.06);
-  border: 1px solid rgba(122, 58, 24, 0.18);
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.20);
   border-radius: 6px;
   padding: 10px 18px;
   font-size: 17px;
   font-weight: 600;
-  color: var(--text-body);
+  color: rgba(255, 255, 255, 0.90);
 }
 
 .price-striked {
   text-decoration: line-through;
-  color: #c0392b;
+  color: rgba(255, 255, 255, 0.50);
 }
 
 .price-main {
   font-size: 26px;
   font-weight: 700;
-  color: var(--text-dark);
+  color: #ffffff;
 }
 
 .price-accent {
-  color: var(--accent);
+  color: var(--accent-light);
   font-size: 34px;
   font-weight: 800;
 }
@@ -256,6 +268,14 @@ body {
 .trust-item svg {
   color: var(--accent);
   flex-shrink: 0;
+}
+
+.hero-section .trust-item {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.hero-section .trust-item svg {
+  color: var(--accent-light);
 }
 
 /* ─── BUY BUTTON ─── */
@@ -1000,6 +1020,7 @@ body {
   .hero-section {
     padding: 60px 6vw;
     min-height: auto;
+    background-position: 38% top;
   }
 
   .hero-grid {
@@ -1105,6 +1126,8 @@ body {
 
   .hero-section {
     padding: 48px 5vw;
+    background-image: url('/bg-mobile.png') !important;
+    background-position: center top;
   }
 
   .hero-logo {
